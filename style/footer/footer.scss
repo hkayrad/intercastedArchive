@@ -1,0 +1,101 @@
+@import "../import/import.scss";
+
+.footer {
+	margin-top: auto;
+	width: 100%;
+	height: 30.6rem;
+	background-color: color(bgPrimary);
+
+	@include mobileS {
+		height: unset;
+	}
+
+	.top {
+		width: 100%;
+		height: 83%;
+		margin-top: 0;
+
+		@include mobileS {
+			height: unset;
+			margin: 0 0 4vw 0;
+		}
+
+		.left {
+			width: 35%;
+			height: 100%;
+
+			@include mobileS {
+				width: 100%;
+				display: flex;
+				height: unset;
+				flex-direction: row;
+			}
+
+			.logo {
+				width: 20rem;
+				margin: 4rem;
+
+				@include mobileS {
+					width: 40vw;
+					margin: 6rem 0 auto 2rem;
+				}
+			}
+
+			.socialMediaLinks {
+				@include mobileS {
+					width: 40vw;
+					margin: 2rem 0 auto 2rem;
+				}
+
+				.social {
+					display: flex;
+					align-items: center;
+					margin: auto 0 0 3.4rem;
+					text-decoration: none;
+
+					img {
+						width: 3rem;
+					}
+
+					p {
+						margin-left: 1rem;
+						font-size: 1.5rem;
+						text-align: center;
+						color: color(text);
+						font-weight: 600;
+					}
+				}
+			}
+		}
+	}
+
+	.bottom {
+		display: flex;
+		justify-content: center;
+		height: 5rem;
+		align-items: center;
+
+		@include mobileS {
+			text-align: center;
+			height: unset;
+		}
+
+		p {
+			font-size: 1.5rem;
+			color: color(text);
+
+			@include mobileS {
+				font-size: 4vw;
+			}
+
+			a {
+				font-size: 1.5rem;
+				color: color(text);
+
+				@include mobileS {
+					font-size: 4vw;
+				}
+			}
+		}
+	}
+}

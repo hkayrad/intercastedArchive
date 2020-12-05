@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+* {
+  font-size: 10px;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+h1#userError {
+  font-size: 4rem;
+  color: #3a3a3a;
+}
+
+#errorDesc {
+  font-size: 3rem;
+  color: #3a3a3a;
+  font-family: Raleway;
+  font-weight: 600;
+  margin-left: 5vw;
+}
+
+#errorDesc #errorLink {
+  font-size: 3rem;
+  color: #3a3a3a;
+  font-family: Raleway;
+  font-weight: 600;
+}
+
+main {
+  margin: 5rem 0 0 0;
+  padding: 3rem 2rem 0 4rem;
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    padding: 0;
+    margin-top: 6rem;
+  }
+}
+
+main div#profile {
+  margin-left: 5.21vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 840px) {
+  main div#profile {
+    margin-left: 0;
+  }
+}
+
+main div#profile img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 840px) {
+  main div#profile img {
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#profile img {
+    margin-left: 3vw;
+  }
+}
+
+main div#profile div#profileColumn {
+  margin-left: 3.13vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 840px) {
+  main div#profile div#profileColumn {
+    width: auto;
+  }
+}
+
+main div#profile div#profileColumn div#name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 840px) {
+  main div#profile div#profileColumn div#name {
+    margin-left: 30vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#profile div#profileColumn div#name {
+    margin-left: 34vw;
+  }
+}
+
+main div#profile div#profileColumn div#name h1#username {
+  font-size: 5rem;
+  font-weight: 600;
+  font-family: Raleway;
+  color: #3a3a3a;
+  margin-left: 0;
+}
+
+@media screen and (max-width: 550px) {
+  main div#profile div#profileColumn div#name h1#username {
+    font-size: 3rem;
+    margin-top: 10vw;
+  }
+}
+
+main div#profile div#profileColumn div#name button {
+  border: none;
+  width: 10vw;
+  height: 2.6vw;
+  background-color: #218c74;
+  border-radius: 1.3vw;
+  font-family: Raleway;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  padding: auto;
+  margin-left: 2vw;
+  margin-top: 2.29vw;
+}
+
+@media screen and (max-width: 840px) {
+  main div#profile div#profileColumn div#name button {
+    width: 20vw;
+    height: 4vw;
+    border-radius: 3vw;
+    margin-top: 6.5vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main div#profile div#profileColumn div#name button {
+    margin-top: 11vw;
+    height: 6vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#profile div#profileColumn div#name button {
+    width: 26vw;
+    height: 10vw;
+    border-radius: 5vw;
+  }
+}
+
+main div#profile div#profileColumn p#desc {
+  width: 52.08vw;
+  font-size: 2rem;
+  font-family: Raleway;
+  font-weight: 600;
+  color: #3a3a3a;
+  margin-top: 0;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 840px) {
+  main div#profile div#profileColumn p#desc {
+    margin-left: 30vw;
+    width: 40vw;
+    height: auto;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main div#profile div#profileColumn p#desc {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 12vw;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#profile div#profileColumn p#desc {
+    margin-top: 8vw;
+  }
+}
+
+main div#profile div#profileColumn div#connections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 840px) {
+  main div#profile div#profileColumn div#connections {
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main div#profile div#profileColumn div#connections a:hover,
+main div#profile div#profileColumn div#connections a:visited,
+main div#profile div#profileColumn div#connections a:link,
+main div#profile div#profileColumn div#connections a:active {
+  text-decoration: none;
+}
+
+main div#profile div#profileColumn div#connections img#account {
+  width: 3vw;
+  height: auto;
+  margin-right: 0.5vw;
+}
+
+@media screen and (max-width: 840px) {
+  main div#profile div#profileColumn div#connections img#account {
+    position: relative;
+    margin-right: .2vw;
+    border-radius: 0;
+    height: 4vw;
+  }
+}
+
+main div#profile div#profileColumn div#connections a p#accountName {
+  font-size: 2rem;
+  font-family: Raleway;
+  font-weight: 600;
+  color: #3a3a3a;
+  margin-right: 11.08vw;
+}
+
+@media screen and (max-width: 840px) {
+  main div#profile div#profileColumn div#connections a p#accountName {
+    margin: 0;
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main div#profile div#profileColumn div#connections a p#accountName {
+    font-size: 1.4rem;
+  }
+}
+
+main h1 {
+  font-size: 5rem;
+  color: #218c74;
+  font-weight: 800;
+  font-family: Raleway;
+  margin-left: 5vw;
+}
+
+@media screen and (max-width: 840px) {
+  main h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main h1 {
+    margin-left: 18vw;
+    margin-top: 5vw;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main h1 {
+    font-size: 3rem;
+    margin-left: 6vw;
+  }
+}
+
+main div#videos {
+  height: auto;
+  margin-left: 5.21vw;
+  margin-right: 6.25vw;
+}
+
+@media screen and (max-width: 550px) {
+  main div#videos {
+    margin: 0;
+  }
+}
+
+main div#videos div#videoPost {
+  margin-bottom: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 840px) {
+  main div#videos div#videoPost {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 4vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main div#videos div#videoPost {
+    margin-bottom: 7vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#videos div#videoPost {
+    margin-left: 0;
+  }
+}
+
+main div#videos div#videoPost a#thumbnailLink {
+  width: 37.4vw;
+  height: 21vw;
+  background-color: black;
+  border-radius: 0.21vw;
+}
+
+@media screen and (max-width: 840px) {
+  main div#videos div#videoPost a#thumbnailLink {
+    width: 100%;
+    height: 51.13vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main div#videos div#videoPost a#thumbnailLink {
+    height: 46vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#videos div#videoPost a#thumbnailLink {
+    height: 56vw;
+  }
+}
+
+main div#videos div#videoPost a#thumbnailLink img#thumbnail {
+  border-radius: 0.21vw;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main div#videos div#videoPost p#duration {
+  font-size: 1.4rem;
+  font-family: Raleway;
+  font-weight: 600;
+  z-index: 1;
+  position: absolute;
+  margin-left: 34vw;
+  margin-top: 19.7vw;
+  background-color: black;
+  color: #f1f1f1;
+}
+
+@media screen and (max-width: 840px) {
+  main div#videos div#videoPost p#duration {
+    margin-left: 74.3vw;
+    margin-top: 48vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main div#videos div#videoPost p#duration {
+    font-size: 1.2rem;
+    margin-left: 76.5vw;
+    margin-top: 42vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#videos div#videoPost p#duration {
+    margin-left: 85.5vw;
+    margin-top: 51vw;
+  }
+}
+
+main div#videos div#videoPost #videoDesc {
+  margin-left: 1.56vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 840px) {
+  main div#videos div#videoPost #videoDesc {
+    margin-left: 0;
+    margin-top: 2vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#videos div#videoPost #videoDesc {
+    margin-left: 2vw;
+  }
+}
+
+main div#videos div#videoPost #videoDesc a h2 {
+  color: #3a3a3a;
+  margin: 0px;
+  width: auto;
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: Raleway;
+}
+
+@media screen and (max-width: 840px) {
+  main div#videos div#videoPost #videoDesc a h2 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#videos div#videoPost #videoDesc a h2 {
+    font-size: 2.5rem;
+  }
+}
+
+main div#videos div#videoPost #videoDesc a:hover,
+main div#videos div#videoPost #videoDesc a:visited,
+main div#videos div#videoPost #videoDesc a:link,
+main div#videos div#videoPost #videoDesc a:active {
+  text-decoration: none;
+}
+
+main div#videos div#videoPost #videoDesc p#desc {
+  color: #3a3a3a;
+  width: 40vw;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: Raleway;
+}
+
+@media screen and (max-width: 840px) {
+  main div#videos div#videoPost #videoDesc p#desc {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#videos div#videoPost #videoDesc p#desc {
+    font-size: 1.2rem;
+  }
+}
+
+main div#videos div#videoPost #videoDesc button {
+  border: none;
+  width: 14.58vw;
+  height: 2.6vw;
+  background-color: #218c74;
+  border-radius: 1.3vw;
+  font-family: Raleway;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  padding: auto;
+  margin-top: 1.04vw;
+}
+
+@media screen and (max-width: 840px) {
+  main div#videos div#videoPost #videoDesc button {
+    width: 25vw;
+    height: 4vw;
+    border-radius: 3vw;
+    margin: 4.2vw 0 0 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main div#videos div#videoPost #videoDesc button {
+    width: 35vw;
+    height: 7vw;
+    border-radius: 4.55vw;
+    margin: 5.95vw 0 0 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#videos div#videoPost #videoDesc button {
+    font-size: 1.5rem;
+    width: 40vw;
+  }
+}
+/*# sourceMappingURL=visitProfile.css.map */

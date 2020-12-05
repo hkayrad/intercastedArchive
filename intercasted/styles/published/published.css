@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+* {
+  font-size: 10px;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+main {
+  margin-top: 7vw;
+  margin-left: 5vw;
+}
+
+@media screen and (max-width: 840px) {
+  main {
+    margin-top: 10vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main {
+    margin-top: 13vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    margin-top: 18vw;
+  }
+}
+
+main h1 {
+  font-size: 2.5vw;
+  font-weight: 700;
+  font-family: Raleway;
+  color: #218c74;
+}
+
+main p {
+  font-size: 1.8vw;
+  font-weight: 600;
+  font-family: Raleway;
+  color: #3a3a3a;
+}
+
+main p a:hover,
+main p a:visited,
+main p a:link,
+main p a:active {
+  text-decoration: none;
+}
+
+main p a {
+  font-size: 1.8vw;
+  font-weight: 600;
+  font-family: Raleway;
+  color: #3a3a3a;
+}
+/*# sourceMappingURL=published.css.map */

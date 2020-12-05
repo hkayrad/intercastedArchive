@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: Raleway;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  margin: 8rem 0 0 0;
+}
+
+@media (max-width: 560px) {
+  .main {
+    margin: 7rem 0 0 0;
+  }
+}
+
+.main .welcomer {
+  width: 94vw;
+  -webkit-transform: translateX(3vw);
+          transform: translateX(3vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer {
+    width: 100vw;
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
+  }
+}
+
+.main .welcomer .title {
+  color: #218c74;
+  font-size: 4vw;
+  margin-bottom: 3vw;
+  font-weight: 900;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .title {
+    font-size: 5vw;
+    margin-bottom: 4vw;
+  }
+}
+
+.main .welcomer .text {
+  font-size: 1.3vw;
+  color: #3a3a3a;
+  margin: auto;
+  margin-bottom: 3vw;
+  width: 70%;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .text {
+    font-size: 3vw;
+    width: 85%;
+    margin-bottom: 4vw;
+  }
+}
+
+.main .welcomer .text a {
+  font-size: 1.4vw;
+  font-weight: 600;
+  color: #f74040;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .text a {
+    font-size: 4.5vw;
+  }
+}
+
+.main .values {
+  width: 94vw;
+  -webkit-transform: translateX(3vw);
+          transform: translateX(3vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .main .values {
+    width: 100vw;
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
+  }
+}
+
+.main .values .title {
+  color: #218c74;
+  font-size: 4vw;
+  margin-bottom: 3vw;
+  font-weight: 900;
+}
+
+@media (max-width: 560px) {
+  .main .values .title {
+    font-size: 5vw;
+    margin-bottom: 4vw;
+  }
+}
+
+.main .values .text {
+  font-size: 1.4vw;
+  color: #3a3a3a;
+  margin: auto;
+  margin-bottom: 3vw;
+  width: 70%;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .main .values .text {
+    font-size: 3vw;
+    width: 85%;
+    margin-bottom: 4vw;
+  }
+}
+
+.main .faq {
+  width: 80vw;
+  margin: 3vw 0 0 0;
+  -webkit-transform: translateX(10vw);
+          transform: translateX(10vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 560px) {
+  .main .faq {
+    width: 94vw;
+    -webkit-transform: translateX(3vw);
+            transform: translateX(3vw);
+  }
+}
+
+.main .faq .title {
+  color: #218c74;
+  font-size: 4vw;
+  margin: auto;
+  margin-bottom: 0.7vw;
+  font-weight: 900;
+}
+
+@media (max-width: 560px) {
+  .main .faq .title {
+    font-size: 5vw;
+    margin-bottom: 4vw;
+  }
+}
+
+.main .faq .row {
+  margin: 1vw 0 2vw 0;
+}
+
+.main .faq .row .question {
+  color: #3a3a3a;
+  font-size: 1.7vw;
+  font-weight: 700;
+}
+
+@media (max-width: 560px) {
+  .main .faq .row .question {
+    font-size: 6vw;
+  }
+}
+
+.main .faq .row .answer {
+  color: #545454;
+  font-size: 1vw;
+  font-weight: 500;
+  margin: 1vw 0 0 0;
+}
+
+@media (max-width: 560px) {
+  .main .faq .row .answer {
+    font-size: 2.5vw;
+  }
+}
+
+.main .faq .row .answer span {
+  color: #545454;
+  font-size: 1vw;
+  font-weight: 800;
+}
+
+@media (max-width: 560px) {
+  .main .faq .row .answer span {
+    font-size: 2.5vw;
+  }
+}
+
+.main .faq .row img {
+  width: 100%;
+  margin: 1vw 0 0 0;
+  border-radius: 2vw;
+}
+
+.main .faq .row .pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 2vw 0 0 0;
+}
+
+@media (max-width: 560px) {
+  .main .faq .row .pricing {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.main .faq .row .pricing .col {
+  width: 20vw;
+  background-color: #ffffff;
+  padding: 4vw 2vw;
+  border-radius: 1vw;
+  color: #3a3a3a;
+  -webkit-box-shadow: 0.3vw 0.3vw 0.5vw #cccccc;
+          box-shadow: 0.3vw 0.3vw 0.5vw #cccccc;
+}
+
+@media (max-width: 560px) {
+  .main .faq .row .pricing .col {
+    text-align: center;
+    width: 80vw;
+    -webkit-box-shadow: 1vw 1vw 1.3vw #cccccc;
+            box-shadow: 1vw 1vw 1.3vw #cccccc;
+    margin: 0 0 5vw 0;
+  }
+}
+
+.main .faq .row .pricing .col h1 {
+  font-size: 3vw;
+  color: #218c74;
+  padding: 0 0 1vw 0;
+}
+
+@media (max-width: 560px) {
+  .main .faq .row .pricing .col h1 {
+    font-size: 10vw;
+  }
+}
+
+.main .faq .row .pricing .col .disclaimer {
+  font-size: 1vw;
+}
+
+@media (max-width: 560px) {
+  .main .faq .row .pricing .col .disclaimer {
+    font-size: 5vw;
+  }
+}
+
+.main .faq .row .pricing .col .oldPrice {
+  font-size: 2vw;
+  text-decoration: line-through;
+}
+
+@media (max-width: 560px) {
+  .main .faq .row .pricing .col .oldPrice {
+    font-size: 7vw;
+  }
+}
+
+.main .faq .row .pricing .col .discount {
+  font-size: 2.5vw;
+  padding: 2vw 0 0 0;
+  color: #218c74;
+  font-weight: 700;
+}
+
+@media (max-width: 560px) {
+  .main .faq .row .pricing .col .discount {
+    font-size: 8vw;
+  }
+}
+
+.main .faq .row .pricing .col .price {
+  font-size: 2.5vw;
+  padding: 2vw 0 0 0;
+}
+
+@media (max-width: 560px) {
+  .main .faq .row .pricing .col .price {
+    font-size: 8vw;
+  }
+}
+
+.main .faq .row .socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 1vw 0 0 0;
+}
+
+.main .faq .row .socialLinks .social {
+  text-decoration: none;
+  color: #3a3a3a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 560px) {
+  .main .faq .row .socialLinks .social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.main .faq .row .socialLinks .social img {
+  width: 4vw;
+  height: 4vw;
+  margin: 0;
+}
+
+@media (max-width: 560px) {
+  .main .faq .row .socialLinks .social img {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+
+.main .faq .row .socialLinks .social p {
+  font-size: 2vw;
+  font-weight: 700;
+}
+
+@media (max-width: 560px) {
+  .main .faq .row .socialLinks .social p {
+    font-size: 4vw;
+  }
+}
+/*# sourceMappingURL=about.css.map */

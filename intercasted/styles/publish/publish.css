@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+* {
+  font-size: 10px;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+main {
+  margin: 5rem 0 0 0;
+  padding: 3.13vw 2rem 0 4.16vw;
+}
+
+main div#topBar {
+  height: 19.42vw;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 840px) {
+  main div#topBar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    height: 53vw;
+  }
+}
+
+main div#topBar img#thumbnail {
+  height: 100%;
+}
+
+@media screen and (max-width: 840px) {
+  main div#topBar img#thumbnail {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main div#topBar img#thumbnail {
+    width: 92vw;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#topBar img#thumbnail {
+    max-height: 50vw;
+    -o-object-fit: contain;
+       object-fit: contain;
+    background-color: black;
+  }
+}
+
+main div#topBar div#columnForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 36vw;
+  width: 57%;
+  position: absolute;
+}
+
+@media screen and (max-width: 840px) {
+  main div#topBar div#columnForm {
+    margin-left: 0;
+    margin-top: 55vw;
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main div#topBar div#columnForm {
+    margin-top: 67vw;
+    width: 92vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#topBar div#columnForm {
+    margin-top: 70vw;
+  }
+}
+
+main div#topBar div#columnForm input#title {
+  margin-bottom: 1vw;
+  width: 100%;
+  font-size: 3rem;
+  font-family: Raleway;
+  border: 2.5px solid #8a8a8a;
+  border-radius: 4px;
+  padding-left: 0.4vw;
+}
+
+main div#topBar div#columnForm div#rowForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main div#topBar div#columnForm div#rowForm textarea#description {
+  margin-right: 1vw;
+  width: 44.89vw;
+  resize: none;
+  font-size: 1.7rem;
+  font-family: Raleway;
+  border: 2.5px solid #8a8a8a;
+  border-radius: 4px;
+  padding-left: 0.4vw;
+}
+
+@media screen and (max-width: 840px) {
+  main div#topBar div#columnForm div#rowForm textarea#description {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main div#topBar div#columnForm div#rowForm textarea#description {
+    width: 60vw;
+  }
+}
+
+main div#topBar div#columnForm div#rowForm div#dateColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 19%;
+}
+
+main div#topBar div#columnForm div#rowForm div#dateColumn label#dateLabel {
+  font-size: 2rem;
+  font-family: Raleway;
+  color: #3a3a3a;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 840px) {
+  main div#topBar div#columnForm div#rowForm div#dateColumn label#dateLabel {
+    font-size: 1.5rem;
+  }
+}
+
+main div#topBar div#columnForm div#rowForm div#dateColumn label#dateLabel input#date {
+  height: auto;
+  width: 100%;
+  border: 2.5px solid #8a8a8a;
+  border-radius: 4px;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 840px) {
+  main div#topBar div#columnForm div#rowForm div#dateColumn label#dateLabel input#date {
+    width: 15vw;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main div#topBar div#columnForm div#rowForm div#dateColumn label#dateLabel input#date {
+    width: 31vw;
+  }
+}
+
+main div#bottomBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 840px) {
+  main div#bottomBar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 6vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main div#bottomBar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+main div#bottomBar input#publish {
+  border: none;
+  width: 10.48vw;
+  height: auto;
+  background-color: #218c74;
+  border-radius: 1.3vw;
+  font-family: Raleway;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  padding: auto;
+  margin-top: 1.04vw;
+  margin-left: 82vw;
+  padding: 0.65vw;
+  position: absolute;
+}
+
+@media screen and (max-width: 840px) {
+  main div#bottomBar input#publish {
+    width: 30vw;
+    margin-left: 63vw;
+    margin-top: 31.8vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main div#bottomBar input#publish {
+    margin-top: 53.5vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#bottomBar input#publish {
+    margin-top: 70.5vw;
+  }
+}
+
+main div#bottomBar select#formInputs {
+  margin: 6vw 0 0 6vw;
+  border-radius: 5px;
+  font-family: Raleway;
+  font-weight: 600;
+  border: 2.5px solid #8a8a8a;
+  height: 2vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 44.89vw;
+  color: #3a3a3a;
+  font-size: 2rem;
+  padding-left: .5vw;
+}
+
+@media screen and (max-width: 840px) {
+  main div#bottomBar select#formInputs {
+    margin-top: 7vw;
+    height: 4vw;
+    width: 60vw;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main div#bottomBar select#formInputs {
+    position: absolute;
+    margin: 0;
+    width: 92vw;
+    height: 6vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#bottomBar select#formInputs {
+    height: 10vw;
+  }
+}
+
+main div#bottomBar select#formInputs .options {
+  font-size: 1.5rem;
+  font-family: Raleway;
+  color: #3a3a3a;
+  font-weight: 600;
+}
+
+main div#bottomBar p#fileNames {
+  color: #ff4e4e;
+  font-family: Raleway;
+  font-size: 2rem;
+  font-weight: 600;
+  width: 14vw;
+  margin-right: 1.04vw;
+}
+
+@media screen and (max-width: 840px) {
+  main div#bottomBar p#fileNames {
+    margin-left: 63vw;
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main div#bottomBar p#fileNames {
+    margin-left: 0;
+    width: 45vw;
+    margin-top: 62vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#bottomBar p#fileNames {
+    font-size: 1.5rem;
+    margin-top: 95vw;
+  }
+}
+/*# sourceMappingURL=publish.css.map */

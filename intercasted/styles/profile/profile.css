@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+body {
+  background-color: #f1f1f1;
+}
+
+aside {
+  margin-left: 0%;
+  margin-top: 3%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 16%;
+  height: 100%;
+  position: fixed;
+}
+
+aside div#curoption {
+  background-color: none;
+  margin: 10%;
+  width: 80%;
+  height: auto;
+  border: 0.05vw #f1f1f1 solid;
+  -webkit-box-shadow: 0.1vw 0.21vw 0.21vw 0px rgba(143, 136, 143, 0.41);
+          box-shadow: 0.1vw 0.21vw 0.21vw 0px rgba(143, 136, 143, 0.41);
+  border-radius: 0.21vw;
+}
+
+aside div#curoption a {
+  width: 100%;
+  background-color: #218c74;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 840px) {
+  aside div#curoption a {
+    height: 12vw;
+  }
+}
+
+aside div#curoption p {
+  text-align: center;
+  color: #fafafa;
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 1.56vw;
+  font-stretch: ultra-expanded;
+}
+
+@media screen and (max-width: 840px) {
+  aside div#curoption p {
+    text-align: center;
+    font-size: 2.1vw;
+    padding-top: 2.4vw;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  aside div#curoption {
+    height: 12vw;
+    margin-top: 5vw;
+  }
+}
+
+@media (max-width: 560px) {
+  aside div#curoption {
+    margin-top: 15vw;
+  }
+}
+
+aside div#option {
+  background-color: none;
+  margin: 10%;
+  width: 80%;
+  height: auto;
+  border: 0.05vw #f1f1f1 solid;
+  -webkit-box-shadow: 0.1vw 0.21vw 0.21vw 0px rgba(143, 136, 143, 0.41);
+          box-shadow: 0.1vw 0.21vw 0.21vw 0px rgba(143, 136, 143, 0.41);
+  border-radius: 0.21vw;
+}
+
+aside div#option a {
+  width: 100%;
+  background-color: none;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 840px) {
+  aside div#option a {
+    height: 12vw;
+  }
+}
+
+aside div#option p {
+  text-align: center;
+  color: #3a3a3a;
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 1.56vw;
+  font-stretch: ultra-expanded;
+}
+
+@media screen and (max-width: 840px) {
+  aside div#option p {
+    text-align: center;
+    font-size: 2.1vw;
+    padding-top: 2.4vw;
+  }
+}
+
+aside div#option button {
+  width: 100%;
+  height: auto;
+  background-color: #f1f1f1;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 840px) {
+  aside div#option {
+    height: 12vw;
+    margin-top: 5vw;
+  }
+}
+
+@media (max-width: 560px) {
+  aside div#option {
+    margin-top: 7vw;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  aside {
+    width: 23%;
+  }
+}
+
+section {
+  margin-left: 18%;
+  margin-right: 20%;
+  margin-top: 7%;
+  width: 80%;
+}
+
+section div#upProf {
+  display: table;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section div#upProf img {
+  margin: 2vw 1vw 0 1vw;
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 840px) {
+  section div#upProf img {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+
+section div#upProf h3 {
+  color: #218c74;
+  font-family: Raleway;
+  font-size: 3vw;
+}
+
+@media screen and (max-width: 840px) {
+  section div#upProf h3 {
+    margin-top: 6vw;
+    font-size: 20px;
+    margin-left: 2vw;
+  }
+}
+
+section div#upProf div.barLine {
+  margin-top: 2vw;
+  margin-left: 36vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+}
+
+section div#upProf div#bar {
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 1.3vw;
+  color: #218c74;
+  text-align: center;
+  margin-left: 2vw;
+}
+
+section div#upProf div#bar p {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 1vw;
+  color: #3a3a3a;
+  text-align: center;
+}
+
+@media screen and (max-width: 840px) {
+  section div#upProf div#bar p {
+    font-size: 1.7vw;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  section div#upProf div#bar {
+    width: 23%;
+    font-size: 1.7vw;
+    margin-top: 1vw;
+  }
+}
+
+section div#upProf .photo {
+  color: white;
+  font-family: Raleway;
+  font-size: 1vw;
+  font-weight: 400;
+  width: 8vw;
+  height: 3vw;
+  border: none;
+  border-radius: 30px;
+  background-color: #218c74;
+  margin-top: 0vw;
+  margin-left: 1vw;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.85vw 2vw;
+}
+
+@media screen and (max-width: 840px) {
+  section div#upProf .photo {
+    width: 20vw;
+    height: 20vw;
+    font-size: 1.8vw;
+    padding: 1.45vw 2vw;
+  }
+}
+
+section div#upProf .changeUsername {
+  color: white;
+  font-family: Raleway;
+  font-size: 1vw;
+  font-weight: 400;
+  width: 12vw;
+  height: 3vw;
+  border: none;
+  border-radius: 30px;
+  background-color: #218c74;
+  margin-left: 2vw;
+  margin-top: 2vw;
+  padding: 1vw;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1vw;
+}
+
+@media screen and (max-width: 840px) {
+  section div#upProf .changeUsername {
+    width: 20vw;
+    height: 5vw;
+    font-size: 1.8vw;
+  }
+}
+
+section div#downProf .submitChanges {
+  color: white;
+  font-family: Raleway;
+  font-size: 1vw;
+  font-weight: 600;
+  width: 10vw;
+  height: 3vw;
+  border: none;
+  border-radius: 30px;
+  background-color: #218c74;
+  margin-left: 68vw;
+}
+
+@media screen and (max-width: 840px) {
+  section div#downProf .submitChanges {
+    margin-left: 55vw;
+    width: 20vw;
+    height: 5vw;
+    font-size: 1.8vw;
+  }
+}
+
+section div#downProf .interests {
+  color: white;
+  font-family: Raleway;
+  font-size: 1vw;
+  font-weight: 600;
+  width: 10vw;
+  height: 3vw;
+  border: none;
+  border-radius: 30px;
+  background-color: #218c74;
+  margin-left: 1vw;
+}
+
+@media screen and (max-width: 840px) {
+  section div#downProf .interests {
+    width: 20vw;
+    height: 5vw;
+    font-size: 1.8vw;
+  }
+}
+
+section div#downProf .mailB {
+  color: white;
+  font-family: Raleway;
+  font-size: 1vw;
+  font-weight: 600;
+  width: 10vw auto;
+  height: 3vw;
+  border: none;
+  border-radius: 30px;
+  background-color: #218c74;
+  margin-left: 2vw;
+}
+
+@media screen and (max-width: 840px) {
+  section div#downProf .mailB {
+    width: 20vw auto;
+    height: 5vw;
+    font-size: 1.8vw;
+  }
+}
+
+section div#downProf .changeB {
+  color: white;
+  font-family: Raleway;
+  font-size: 1vw;
+  font-weight: 600;
+  width: 10vw;
+  height: 3vw;
+  border: none;
+  border-radius: 30px;
+  background-color: #218c74;
+  margin-left: 1vw;
+}
+
+@media screen and (max-width: 840px) {
+  section div#downProf .changeB {
+    width: 20vw;
+    height: 5vw;
+    font-size: 1.8vw;
+  }
+}
+
+section .bio {
+  width: 60vw;
+  font-family: Raleway;
+  font-size: 1vw;
+  font-weight: 400;
+  height: 13vw;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 840px) {
+  section .bio {
+    font-size: 1.6vw;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  section {
+    width: 75%;
+    margin-left: 22%;
+    margin-right: 20%;
+    margin-top: 10%;
+  }
+}
+/*# sourceMappingURL=profile.css.map */

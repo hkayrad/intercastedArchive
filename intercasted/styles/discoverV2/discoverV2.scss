@@ -1,0 +1,313 @@
+@import "../imports/import.scss";
+
+* {
+    font-size: 10px;
+}
+
+body {
+    background-color:color(bgColor);
+}
+
+aside {
+    margin-left: 3%;
+    margin-top: 5%;
+    align-items: center;
+    width: 20%;
+    height: auto;
+    position: fixed;
+
+    @include mobileM {
+        width: 30%;
+    }
+
+    @include mobileIphone {
+        margin-top: 15%;
+        margin-left: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        position: relative;
+    }
+    
+    a:hover,
+    a:visited,
+    a:link,
+    a:active {
+        text-decoration: none;
+    }
+
+    a {
+        @include mobileIphone {
+            width: 100%;
+        }
+        
+        div#card {
+            background-color: white;
+            margin: 5%;
+            width: 65%;
+            height: auto;
+            border: 0.05vw #f1f1f1 solid;
+            box-shadow: 0.1vw 0.21vw 0.21vw 0px rgba(143, 136, 143, 0.41);
+            border-radius: 0.21vw;
+
+            @include mobileL {
+                width: 90%;
+            }
+
+            @include mobileM {
+                width: 100%;
+            }
+
+            @include mobileIphone {
+                margin: 1%;
+                width: 95%;
+            }
+
+            p {
+                text-align: center;
+                color: color(primary);
+                font-family: $font;
+                font-weight: 600;
+                font-size: 3rem;
+
+                @include mobileL {
+                    font-size: 2.5rem;
+                }
+                
+                @include mobileIphone {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+section {
+    margin-left: 25%;
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    @include mobileL {
+        grid-template-columns: auto auto;
+        margin-top: 7%;
+    }
+    
+    @include mobileM {
+        grid-template-columns: none;
+        margin-left: 40%;
+        margin-top: 10%;
+    }
+
+    @include mobileIphone {
+        padding-top: 2%;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    h1#notFoundError {
+        font-size: 3rem;
+        font-family: $font;
+        font-weight: 600;
+        color: color(primary);
+
+        @include mobileIphone {
+            margin-left: 2%;
+        }
+    }
+    
+    div#stream {
+        display: flex;
+        flex-direction: column;
+        width: 21vw;
+        height: auto;
+        margin-right: 3.81vw;
+
+        @include mobileL {
+            width: 34vw;
+        }
+
+        @include mobileM {
+            width: 56vw;
+        }
+
+        @include mobileIphone {
+            margin-bottom: 3vw;
+            margin-right: 0;
+            width: 100%;
+        }
+
+        a:hover,
+        a:visited,
+        a:link,
+        a:active {
+            text-decoration: none;
+        }
+
+        a#thumbnail {
+            width: 100%;
+            height: 12vw;
+            background-color: black;
+            border-radius: 0.21vw;
+
+            @include mobileL {
+                height: 19.5vw;
+            }
+
+            @include mobileM {
+                height: 32vw;
+            }
+            
+            @include mobileIphone {
+                height: 56.3vw;
+            }
+
+            img {
+                width: 100%;
+				height: 100%;
+				object-fit: contain;
+                border-radius: 0.21vw;
+            }
+        }
+
+        p#duration {
+            font-size: 1.4rem;
+            font-family: $font;
+            font-weight: 600;
+            z-index: 1;
+            position: absolute;
+            margin-left: 17.7vw;
+            margin-top: 10.8vw;
+            background-color: black;
+            color: #f1f1f1;
+            
+            @include mobileL {
+                margin-left: 26.7vw;
+                margin-top: 16.8vw;
+            }
+
+            @include mobileM {
+                margin-left: 45vw;
+                margin-top: 28vw;
+            }
+
+            @include mobileIphone {
+                font-size: 1.2rem;
+                margin-left: 86.3vw;
+                margin-top: 51.2vw;
+            }
+        }
+
+        div#channel {
+            margin-top: 0.52vw;
+            display: flex;
+            flex-direction: row;
+
+            @include mobileIphone {
+                margin-top: 2vw;
+                margin-bottom: 1vw;
+                margin-left: 2%;
+            }
+
+            a#channel {
+                width: 60%;
+                display: flex;
+                flex-direction: row;
+
+                @include mobileL {
+                    margin-top: 1vw;
+                }
+
+                img {
+                    width: 2.35vw;
+                    height: 2.35vw;
+                    border-radius: 50%;
+
+                    @include mobileL {
+                        width: 4vw;
+                        height: 4vw;
+                    }
+
+                    @include mobileM {
+                        width: 7vw;
+                        height: 7vw;
+                    }
+                }
+
+                p {
+                    font-size: 1.9rem;
+                    font-weight: 600;
+                    font-family: $font;
+                    color: #7b7b7b;
+                    margin: 5%;
+
+                    @include mobileIphone {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+
+            button {
+                width: 40%;
+                height: 1.9vw;
+                background-color: color(primary);
+                border-radius: 1.3vw;
+                font-family: $font;
+                font-size: 1.4rem;
+                color: white;
+                text-align: center;
+                padding: auto;
+                border: none;
+                margin: 2%;
+
+                @include mobileL {
+                    width: 60%;
+                    height: 3vw;
+                    margin-top: 1.8vw;
+                }
+
+                @include mobileM {
+                    height: 5vw;
+                    border-radius: 3vw;
+                    margin-top: 2.2vw;
+                }
+
+                @include mobileIphone {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        a {
+            p#title {
+                font-size: 2rem;
+                margin: 0;
+                margin-bottom: .7vw;
+                font-weight: 600;
+                font-family: $font;
+                color: color(textColor);
+
+                @include mobileIphone {
+                    font-size: 1.5rem;
+                    margin-left: 2%;
+                }
+            }
+        }
+
+        p#desc {
+            font-size: 1.5rem;
+            font-weight: 400;
+            font-family: $font;
+            color: color(textColor);
+            margin: 0;
+            margin-bottom: 2vw;
+            width: 100%;
+
+            @include mobileIphone {
+                font-size: 1.2rem;
+                margin-left: 2%;
+                width: auto;
+            }
+        }
+    }
+}

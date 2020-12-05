@@ -1,0 +1,727 @@
+@import "../imports/import.scss";
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+* {
+	font-size: 10px;
+}
+
+body {
+	background-color: color(bgColor);
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+	text-decoration: none;
+}
+
+main {
+	margin: 5rem 0 0 0;
+	padding: 3rem 2rem 0 4rem;
+
+	@include mobileIphone {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	h1 {
+		font-size: 5rem;
+		color: color(primary);
+		font-weight: 800;
+		font-family: $font, sans-serif;
+		margin: 0 0 2rem 0;
+		padding: 0 0 0 0;
+
+		@include mobileL {
+			font-size: 4rem;
+		}
+
+		@include mobileM {
+			font-size: 5rem;
+			margin-left: 26vw;
+		}
+
+		@include mobileIphone {
+			margin-left: 25.66vw;
+		}
+	}
+
+	.row {
+		@include mobileL {
+			display: flex;
+			flex-direction: column;
+		}
+
+		@include mobileIphone {
+			margin-left: 2rem;
+		}
+
+		aside#calendar {
+			width: 15vw;
+
+			@include mobileL {
+				width: 100%;
+			}
+
+			@include mobileM {
+				width: 95%;
+			}
+
+			h4 {
+				margin-bottom: 15px;
+				text-align: center;
+				font-size: 4rem;
+				font-family: $font;
+				color: color(primary);
+				font-weight: 600;
+				margin-top: 0px;
+
+				@include mobileL {
+					font-size: 3rem;
+				}
+
+				@include mobileM {
+					margin: 0;
+				}
+			}
+
+			div#inCalendar {
+				border-radius: 8px;
+				background-color: white;
+				max-height: 31.7vw;
+				overflow: auto;
+
+				@include mobileL {
+					max-height: 45vw;
+				}
+
+				@include mobileM {
+					max-height: 55vw;
+				}
+
+				@include mobileIphone {
+					max-height: 65vw;
+				}
+
+				h5 {
+					margin-top: 10%;
+					margin-bottom: 0.52vw;
+					font-size: 2.5rem;
+					font-family: $font;
+					font-weight: 600;
+					text-align: center;
+					color: color(textColor);
+					border-bottom: 2px solid #9b9b9b;
+					margin-left: 8px;
+					margin-right: 8px;
+
+					a{
+						margin-top: 10%;
+						margin-bottom: 0.52vw;
+						font-size: 2.5rem;
+						font-family: $font;
+						font-weight: 600;
+						text-align: center;
+						color: color(textColor);
+						margin-left: 8px;
+						margin-right: 8px;
+					}
+
+					@include mobileL {
+						font-size: 2rem;
+						margin-top: 2vw;
+						padding-bottom: 2vw;
+					}
+				}
+
+				ul {
+					border-bottom: 1px solid #ccc;
+					padding: 0px;
+					margin-left: 8px;
+					margin-right: 8px;
+
+					li {
+						display: flex;
+						flex-direction: row;
+						border-bottom: 1px solid #9b9b9b;
+
+						
+
+						p#time {
+							font-size: 1rem;
+							font-family: $font;
+							font-weight: 400;
+							text-align: right;
+							width: auto;
+						}
+
+						p {
+							font-size: 1.8rem;
+							font-family: $font;
+							font-weight: 600;
+							text-align: left;
+
+							width: auto;
+							color: color(textColor);
+							padding-left: 1vw;
+
+							@include mobileL {
+								padding-left: 2vw;
+								margin-top: 1vw;
+							}
+
+							@include mobileM {
+								padding-left: 4vw;
+							}
+
+						}
+
+						span#oneDay {
+							width: 2vw;
+							height: 2vw;
+							background-color: blue;
+							border-radius: 50%;
+							margin-top: .5vw;
+							display: inline-block;
+
+							@include mobileL {
+								width: 3.5vw;
+								height: 3.5vw;
+								margin-top: .8vw;
+							}
+
+							@include mobileM {
+								width: 5.5vw;
+								height: 5.5vw;
+							}
+
+							@include mobileIphone {
+								width: 10vw;
+								height: 10vw;
+								margin-top: 0;
+							}
+						}
+
+						span#twelveHours {
+							width: 2vw;
+							height: 2vw;
+							background-color: color(primary);
+							border-radius: 50%;
+							margin-top: .5vw;
+
+							@include mobileL {
+								width: 3.5vw;
+								height: 3.5vw;
+								margin-top: .8vw;
+							}
+
+							@include mobileM {
+								width: 5.5vw;
+								height: 5.5vw;
+							}
+
+							@include mobileIphone {
+								width: 10vw;
+								height: 10vw;
+								margin-top: 0;
+							}
+						}
+
+						span#oneHour {
+							width: 2vw;
+							height: 2vw;
+							background-color: red;
+							border-radius: 50%;
+							margin-top: .5vw;
+
+							@include mobileL {
+								width: 3.5vw;
+								height: 3.5vw;
+								margin-top: .8vw;
+							}
+
+							@include mobileM {
+								width: 5.5vw;
+								height: 5.5vw;
+							}
+
+							@include mobileIphone {
+								width: 10vw;
+								height: 10vw;
+								margin-top: 0;
+							}
+						}
+
+						span#started {
+							width: 2vw;
+							height: 2vw;
+							background-color: rgb(255, 0, 255);
+							border-radius: 50%;
+							margin-top: .5vw;
+
+							@include mobileL {
+								width: 3.5vw;
+								height: 3.5vw;
+								margin-top: .8vw;
+							}
+
+							@include mobileM {
+								width: 5.5vw;
+								height: 5.5vw;
+							}
+
+							@include mobileIphone {
+								width: 10vw;
+								height: 10vw;
+								margin-top: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		div#premieres {
+			display: flex;
+			flex-direction: row;
+
+			@include mobileL {
+				margin-top: 5vw;
+			}
+
+			@include mobileM {
+				display: flex;
+				flex-direction: column;
+			}
+
+			aside#premCard {
+				margin-left: 2.92vw;
+				overflow: auto;
+				width: 20.57vw;
+				max-height: 36.45vw;
+
+				@include mobileL {
+					width: 30vw;
+					margin-left: 10vw;
+					max-height: 40vw;
+				}
+
+				@include mobileM {
+					width: 95%;
+					margin-left: 0;
+					max-height: 80vw;
+				}
+
+				h1 {
+					a{
+						margin-bottom: 15px;
+						text-align: center;
+						font-size: 4rem;
+						font-family: $font;
+						color: color(primary);
+						font-weight: 600;
+						margin-top: 0px;
+
+						@include mobileIphone {
+							font-size: 3rem;
+						}
+
+					}
+						@include mobileIphone {
+							margin-left: 18%;
+						}
+				}
+
+				div {
+					height: 13.54vw;
+					width: 19.27vw;
+
+					@include mobileL {
+						width: 25.7vw;
+						height: 18vw;
+						margin-bottom: 2vw;
+					}
+
+					@include mobileM {
+						width: 100%;
+						height: auto;
+						margin-bottom: 4vw;
+					}
+
+					img {
+						height: 10.42vw;
+						width: 100%;
+						background-color: black;
+						border-radius: 0.21vw;
+						object-fit: contain;
+
+						@include mobileL {
+							height: 14.5vw;
+							border-radius: 0.5vw;
+						}
+
+						@include mobileM {
+							height: 50vw;
+							border-radius: 1vw;
+						}
+					}
+
+					p {
+						color: color(textColor);
+						font-size: 2rem;
+						font-weight: 600;
+						font-family: $font;
+
+						@include mobileL {
+							font-size: 1.8rem;
+							margin-top: 1vw;
+						}
+
+						@include mobileM {
+							font-size: 2.5rem;
+							margin-top: 2vw;
+						}
+					}
+				}
+			}
+
+			section#premiere {
+				width: 52.71vw;
+				height: 39.38vw;
+				margin-left: 2.5vw;
+
+				@include mobileL {
+					margin-left: 0;
+					margin-bottom: 5vw;
+				}
+
+				@include mobileM {
+					width: 100%;
+					height: auto;
+				}
+
+				img {
+					width: 52.71vw;
+					height: 30.21vw;
+					border-radius: 0.21vw;
+					object-fit: contain;
+					background-color: black;
+
+					@include mobileL {
+						width: 60vw;
+						height: 35vw;
+						border-radius: 0.5vw;
+					}
+
+					@include mobileM {
+						width: 95%;
+						height: 50vw;
+						border-radius: 1vw;
+					}
+				}
+
+				ul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+
+					li {
+						margin-bottom: 0.52vw;
+
+						p {
+							color: color(textColor);
+							font-family: $font;
+							font-weight: 600;
+							margin-top: 3.13vw;
+							margin-left: 4.43vw;
+							font-size: 3.5rem;
+
+							@include mobileL {
+								font-size: 2rem;
+							}
+
+							@include mobileM {
+								font-size: 2.5rem;
+								margin: 4vw 0 0 6.5vw;
+							}
+						}
+
+						span {
+							position: absolute;
+							width: 2.86vw;
+							height: 2.86vw;
+							background-color: blue;
+							border-radius: 50%;
+
+							@include mobileM {
+								width: 5.5vw;
+								height: 5.5vw;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.reco {
+		height: auto;
+		margin-left: 5.21vw;
+		margin-right: 6.25vw;
+
+		@include mobileL {
+			margin: 0;
+		}
+
+		@include mobileM {
+			width: 95%;
+		}
+
+		@include mobileIphone {
+			width: 100%;
+		}
+
+		h1 {
+			color: color(primary);
+			font-weight: 800;
+			font-family: $font;
+			font-size: 5rem;
+
+			@include mobileL {
+				font-size: 4rem;
+			}
+
+			@include mobileM {
+				margin-left: 8vw;
+				margin-top: 5vw;
+			}
+
+			@include mobileIphone {
+				font-size: 3rem;
+				margin-left: 15%;
+			}
+		}
+
+		div#recoPost {
+			margin-bottom: 2%;
+			display: flex;
+			flex-direction: row;
+
+			@include mobileL {
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 4vw;
+			}
+
+			@include mobileM {
+				margin-bottom: 7vw;
+			}
+
+			@include mobileIphone {
+				margin-left: 0;
+			}
+
+			a#thumbnailLink {
+				width: 37.4vw;
+				height: 21vw;
+				background-color: black;
+				border-radius: 0.21vw;
+
+				@include mobileL {
+					width: 100%;
+					height: 51.13vw;
+				}
+
+				@include mobileM {
+					height: 46vw;
+				}
+
+				@include mobileIphone {
+					height: 56vw;
+				}
+
+				img#thumbnail {
+					border-radius: 0.21vw;
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+
+				}
+			}	
+
+			p#duration {
+				font-size: 1.4rem;
+                font-family: $font;
+                font-weight: 600;
+                z-index: 1;
+                position: absolute;
+                margin-left: 34vw;
+                margin-top: 19.7vw;
+                background-color: black;
+				color: #f1f1f1;
+				
+				@include mobileL {
+					margin-left: 83.5vw;
+					margin-top: 48vw;
+				}
+
+				@include mobileM {
+					font-size: 1.2rem;
+					margin-left: 72vw;
+					margin-top: 42.5vw;
+				}
+
+				@include mobileIphone {
+					margin-left: 85.5vw;
+					margin-top: 51vw;
+				}
+			}
+
+			div#recoDesc {
+				margin-left: 1.56vw;
+				display: flex;
+				flex-direction: column;
+
+				@include mobileL {
+					margin-left: 0;
+					margin-top: 2vw;
+				}
+
+				@include mobileIphone {
+					margin-left: 2vw;
+				}
+				
+				a {
+					h2 {
+						color: color(textColor);
+						margin: 0px;
+						width: auto;
+						font-size: 4rem;
+						font-weight: 600;
+						font-family: $font;
+
+						@include mobileL {
+							font-size: 3rem;
+						}
+
+						@include mobileIphone {
+							font-size: 2.5rem;
+						}
+					}
+				}
+
+				p#desc {
+					color: color(textColor);
+					width: 40vw;
+					font-size: 2rem;
+					font-weight: 400;
+					font-family: $font;
+
+					@include mobileL {
+						font-size: 1.5rem;
+						width: 100%;
+					}
+
+					@include mobileIphone {
+						font-size: 1.2rem;
+					}
+				}
+
+
+                div#chRow {
+                    display: flex;
+                    flex-direction: row;
+                    height: 2.6vw;
+
+                    img#channelImg {
+                        width: 2.34vw;
+                        height: 2.34vw;
+                        border-radius: 50%;
+
+                        @include mobileL {
+                            width: 4vw;
+                            height: 4vw;
+                        }
+
+                        @include mobileM {
+                            width: 6vw;
+                            height: 6vw;
+						}
+						
+						@include mobileIphone {
+							width: 8vw;
+							height: 8vw;
+						}
+                    }
+
+                    p#channelN {
+                        color: color(textColor);
+                        margin: 1%;
+                        font-size: 2.5rem;
+                        font-family: $font;
+                        font-weight: 600;
+
+                        @include mobileL {
+                            margin-top: 0;
+						}
+						
+						@include mobileIphone {
+							font-size: 1.7rem;
+							margin: 1.2%;
+						}
+					}
+					
+					@include mobileIphone {
+						margin-bottom: 2vw;
+					}
+				}
+				
+				p#airDateTime {
+					font-size: 2rem;
+					font-weight: 400;
+					font-family: $font;
+					color: color(textColor);
+					
+				}
+
+				button {
+					border: none;
+					width: 14.58vw;
+					height: 2.6vw;
+					background-color: #218c74;
+					border-radius: 1.3vw;
+					font-family: $font;
+					font-size: 2rem;
+					color: white;
+					text-align: center;
+					padding: auto;
+					margin-top: 1.04vw;
+
+					@include mobileL {
+						width: 25vw;
+						height: 4vw;
+						border-radius: 3vw;
+						margin: 4.2vw 0 0 0;
+					}
+
+					@include mobileM {
+						width: 35vw;
+						height: 7vw;
+						border-radius: 4.55vw;
+						margin: 5.95vw 0 0 0;
+					}
+
+					@include mobileIphone {
+						font-size: 1.5rem;
+						width: 40vw;
+					}
+				}
+			}
+		}
+	}
+}

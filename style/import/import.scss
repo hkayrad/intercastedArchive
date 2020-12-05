@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+
+$font: Raleway;
+
+$mobileS: 560px;
+
+$colors: (
+	text: #3a3a3a,
+	textLight: lighten(#3a3a3a, 10%),
+	textLighter: lighten(#3a3a3a, 30%),
+	textSecondary: #ffffff,
+	bgPrimary: #f1f1f1,
+	primary: #218c74,
+	yellow: #fe9a05,
+	red: #f74040,
+	blue: /* new */ #0059ff /*old #1f21aa */,
+);
+
+@function color($color-name) {
+	@return map-get($colors, $color-name);
+}
+
+@mixin mobileS {
+	@media (max-width: #{$mobileS}) {
+		@content;
+	}
+}

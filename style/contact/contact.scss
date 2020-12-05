@@ -1,0 +1,213 @@
+@import "../import/import.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+	font-family: $font;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.main {
+	margin: 8rem 0 10vw 0;
+
+	.welcomer {
+		width: 94vw;
+		transform: translateX(3vw);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		@include mobileS {
+			width: 100vw;
+			transform: translateX(0vw);
+		}
+
+		.title {
+			color: color(primary);
+			font-size: 6vw;
+			margin-bottom: 0.7vw;
+			font-weight: 900;
+
+			@include mobileS {
+				font-size: 8vw;
+				margin-bottom: 5vw;
+			}
+		}
+
+		.text {
+			font-size: 2.2vw;
+			color: color(textLight);
+			margin: auto;
+			margin-bottom: 0.7vw;
+			width: 50%;
+			text-align: center;
+
+			@include mobileS {
+				font-size: 4.5vw;
+				width: 85%;
+				margin-bottom: 5vw;
+			}
+
+			span {
+				font-size: 2.5vw;
+				font-weight: 600;
+				color: color(red);
+
+				@include mobileS {
+					font-size: 4.5vw;
+				}
+			}
+		}
+
+		.contact {
+			margin: 2vw 0 0 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			@include mobileS {
+				margin-top: 4vw;
+				text-align: center;
+				align-items: center;
+				width: 80%;
+			}
+
+			.top {
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				margin: auto auto 2vw auto;
+
+				@include mobileS {
+					flex-direction: column;
+					margin: auto auto 0 auto;
+				}
+
+				.contactName,
+				.contactSubject {
+					width: 45%;
+					font-size: 2vw;
+					border: none;
+					color: color(textLight);
+					border-bottom: 1px solid color(text);
+					margin: auto;
+
+					@include mobileS {
+						width: 100%;
+						font-size: 5vw;
+						margin: auto auto 6vw auto;
+					}
+
+					&:focus {
+						outline: none;
+					}
+				}
+			}
+
+			.contactEmail {
+				width: 95%;
+				font-size: 2vw;
+				border: none;
+				color: color(textLight);
+				border-bottom: 1px solid color(text);
+				margin: auto auto 2vw auto;
+
+				@include mobileS {
+					width: 100%;
+					font-size: 5vw;
+					margin: auto auto 6vw auto;
+				}
+
+				&:focus {
+					outline: none;
+				}
+
+				&:valid {
+					color: color(primary);
+				}
+
+				&:invalid {
+					color: color(red);
+				}
+			}
+
+			.contactMessage {
+				width: 95%;
+				height: 10rem;
+				font-size: 2vw;
+				border: none;
+				color: color(textLight);
+				border-bottom: 1px solid color(text);
+				margin: auto auto 2vw auto;
+				resize: none;
+
+				@include mobileS {
+					width: 100%;
+					font-size: 5vw;
+					margin: auto auto 6vw auto;
+				}
+
+				&:focus {
+					outline: none;
+				}
+			}
+
+			.successful {
+				font-size: 2vw;
+				color: color(primary);
+				margin: 2vw 0;
+
+				@include mobileS {
+					font-size: 3vw;
+					margin: 3vw 0;
+				}
+			}
+
+			.failed {
+				font-size: 2vw;
+				color: color(red);
+				margin: 2vw 0;
+
+				@include mobileS {
+					font-size: 3vw;
+					margin: 3vw 0;
+				}
+			}
+
+			.contactSubmit {
+				width: 30%;
+				font-size: 2vw;
+				border: none;
+				color: color(textSecondary);
+				background-color: color(primary);
+				margin: auto;
+				padding: 1vw 2vw;
+				border-radius: 1vw;
+				transition: 0.3s;
+
+				@include mobileS {
+					width: 100%;
+					font-size: 5vw;
+					margin: 3vw 0;
+				}
+
+				&:hover {
+					color: color(primary);
+					background-color: color(textSecondary);
+				}
+
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+	}
+}

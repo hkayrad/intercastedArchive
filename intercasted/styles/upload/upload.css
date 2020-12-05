@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+* {
+  font-size: 10px;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main div#fileButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: auto;
+  margin-top: 12.3vw;
+}
+
+@media screen and (max-width: 375px) {
+  main div#fileButtons {
+    margin-top: 30vw;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  main div#fileButtons {
+    margin-top: 20vw;
+  }
+}
+
+main div#fileButtons div#columnVideoForm {
+  margin-top: 4.2vw;
+}
+
+@media screen and (max-width: 840px) {
+  main div#fileButtons div#columnVideoForm {
+    margin-top: 16vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main div#fileButtons div#columnVideoForm {
+    margin-top: 34.35vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#fileButtons div#columnVideoForm {
+    margin-top: 45.35vw;
+  }
+}
+
+main div#fileButtons div#columnVideoForm p#required {
+  color: #FF4E4E;
+  font-family: Raleway;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 33.91vw;
+  width: 15.6vw;
+}
+
+@media screen and (max-width: 840px) {
+  main div#fileButtons div#columnVideoForm p#required {
+    margin-left: 22.41vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main div#fileButtons div#columnVideoForm p#required {
+    margin-left: 8.72vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#fileButtons div#columnVideoForm p#required {
+    font-size: 1.7rem;
+    margin-left: 3vw;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  main div#fileButtons div#columnVideoForm p#required {
+    font-size: 1.4rem;
+  }
+}
+
+main div#fileButtons div#columnVideoForm label#select {
+  font-size: 2.5rem;
+  color: white;
+  font-family: Raleway;
+  font-weight: 600;
+  border: none;
+  background-color: #218c74;
+  border-radius: 1.3vw;
+  margin-top: 1.04vw;
+  display: block;
+  width: 15.6vw;
+  height: auto;
+  text-align: center;
+  padding: .65vw;
+  margin-right: 1vw;
+  margin-left: 32.91vw;
+}
+
+@media screen and (max-width: 840px) {
+  main div#fileButtons div#columnVideoForm label#select {
+    width: 25vw;
+    margin-left: 21.41vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main div#fileButtons div#columnVideoForm label#select {
+    width: 40vw;
+    margin-left: 7.72vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#fileButtons div#columnVideoForm label#select {
+    font-size: 2rem;
+    margin-left: 2vw;
+    width: 46vw;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  main div#fileButtons div#columnVideoForm label#select {
+    font-size: 1.5rem;
+  }
+}
+
+main div#fileButtons div#columnVideoForm input#fileSelect {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  main div#fileButtons div#columnThumbForm {
+    margin-top: 14.7vw;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  main div#fileButtons div#columnThumbForm {
+    margin-top: 24.4vw;
+  }
+}
+
+main div#fileButtons div#columnThumbForm p#note {
+  color: #FF4E4E;
+  font-family: Raleway;
+  font-size: 2rem;
+  font-weight: 600;
+  width: 15.6vw;
+  margin-left: 1vw;
+}
+
+@media screen and (max-width: 840px) {
+  main div#fileButtons div#columnThumbForm p#note {
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main div#fileButtons div#columnThumbForm p#note {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#fileButtons div#columnThumbForm p#note {
+    font-size: 1.7rem;
+    width: 46vw;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  main div#fileButtons div#columnThumbForm p#note {
+    font-size: 1.4rem;
+  }
+}
+
+main div#fileButtons div#columnThumbForm label#selectThumbnail {
+  font-size: 2.5rem;
+  color: white;
+  font-family: Raleway;
+  font-weight: 600;
+  border: none;
+  background-color: #218c74;
+  border-radius: 1.3vw;
+  margin-top: 1.04vw;
+  display: block;
+  width: 15.6vw;
+  height: auto;
+  text-align: center;
+  padding: .65vw;
+  margin-right: 1vw;
+}
+
+@media screen and (max-width: 840px) {
+  main div#fileButtons div#columnThumbForm label#selectThumbnail {
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main div#fileButtons div#columnThumbForm label#selectThumbnail {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main div#fileButtons div#columnThumbForm label#selectThumbnail {
+    font-size: 2rem;
+    width: 46vw;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  main div#fileButtons div#columnThumbForm label#selectThumbnail {
+    font-size: 1.5rem;
+  }
+}
+
+main div#fileButtons div#columnThumbForm input#thumbnailSelect {
+  display: none;
+}
+
+main input#submit {
+  border: none;
+  width: 10.48vw;
+  height: auto;
+  background-color: #218c74;
+  border-radius: 1.3vw;
+  font-family: Raleway;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  padding: auto;
+  margin-top: 5vw;
+  margin-left: 44.64vw;
+  padding: .65vw;
+}
+
+@media screen and (max-width: 840px) {
+  main input#submit {
+    width: 15vw;
+    margin-left: 41vw;
+    margin-top: 8vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main input#submit {
+    width: 30vw;
+    margin-left: 34.35vw;
+    margin-top: 10vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main input#submit {
+    font-size: 2rem;
+    margin-top: 15vw;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  main input#submit {
+    font-size: 1.7rem;
+  }
+}
+/*# sourceMappingURL=upload.css.map */

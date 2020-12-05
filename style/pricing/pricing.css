@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: Raleway;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  margin: 10rem 0 0 0;
+}
+
+@media (max-width: 560px) {
+  .main {
+    margin: 7rem 0 0 0;
+  }
+}
+
+.main .welcomer {
+  width: 94vw;
+  -webkit-transform: translateX(3vw);
+          transform: translateX(3vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer {
+    width: 100vw;
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
+  }
+}
+
+.main .welcomer .title {
+  color: #218c74;
+  font-size: 6vw;
+  margin-bottom: 3vw;
+  font-weight: 900;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .title {
+    font-size: 8vw;
+    margin-bottom: 6vw;
+  }
+}
+
+.main .welcomer .slogan {
+  color: #3a3a3a;
+  font-size: 4vw;
+  margin: auto;
+  margin-bottom: 1vw;
+  font-weight: 700;
+  width: 100%;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .slogan {
+    width: 95%;
+    font-size: 6vw;
+    margin-bottom: 4vw;
+  }
+}
+
+.main .welcomer .slogan a {
+  font-size: 4vw;
+  font-weight: 600;
+  color: #f74040;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .slogan a {
+    font-size: 6vw;
+  }
+}
+
+.main .welcomer .text {
+  font-size: 2.2vw;
+  color: #545454;
+  margin: auto;
+  margin-bottom: 3vw;
+  width: 50%;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .text {
+    font-size: 4.5vw;
+    width: 85%;
+    margin-bottom: 4vw;
+  }
+}
+
+.main .welcomer .signUp {
+  font-size: 2.5vw;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #218c74;
+  text-decoration: none;
+  padding: 0.5vw 2vw;
+  margin: 3vw 2vw 5vw 2vw;
+  border-radius: 1vw;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .signUp {
+    font-size: 5vw;
+    padding: 1vw 3vw;
+    border-radius: 2vw;
+  }
+}
+
+.main .welcomer .preRegister {
+  width: 80%;
+  margin: auto;
+  margin-top: 1vw;
+  margin-bottom: 7vw;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .preRegister {
+    margin-top: 2vw;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.main .welcomer .preRegister .preRegisterInput {
+  width: 35%;
+  font-size: 2.5vw;
+  border: none;
+  color: #545454;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .preRegister .preRegisterInput {
+    width: 100%;
+    font-size: 4.5vw;
+    margin-bottom: 4vw;
+  }
+}
+
+.main .welcomer .preRegister .preRegisterSubmit {
+  background-color: #218c74;
+  color: #ffffff;
+  border: none;
+  font-size: 2vw;
+  border-radius: 1vw;
+  padding: 0.8vw 2vw;
+  margin-left: 2vw;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .preRegister .preRegisterSubmit {
+    margin: 2vw 0 4vw 0;
+    font-size: 4.5vw;
+    padding: 1.2vw 23vw;
+    border-radius: 2vw;
+    width: 100%;
+  }
+}
+
+.main .welcomer .preRegister .preRegisterSubmit:hover {
+  background-color: #ffffff;
+  color: #218c74;
+  cursor: pointer;
+}
+
+.main .welcomer .preRegister p {
+  color: #878787;
+  margin: 0.7vw 0 0 0;
+  font-size: 1vw;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .preRegister p {
+    font-size: 2.4vw;
+    margin: 1.5vw 0 0 0;
+  }
+}
+
+.main .welcomer .preRegister p a {
+  color: #878787;
+  font-size: 1vw;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .preRegister p a {
+    font-size: 2.4vw;
+    margin: 1.5vw 0 0 0;
+  }
+}
+
+.main .welcomer .preRegister .preRegisterCampaign {
+  margin: 1.2vw 0 0 0;
+  width: 1.3vw;
+  height: 1.3vw;
+  border: 1px solid #3a3a3a;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .preRegister .preRegisterCampaign {
+    width: 3vw;
+    height: 3vw;
+    margin: 2vw 0 0 0;
+  }
+}
+
+.main .welcomer .preRegister .campaignEmailsLabel {
+  color: #545454;
+  font-size: 1.3vw;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .preRegister .campaignEmailsLabel {
+    font-size: 2.6vw;
+  }
+}
+
+.main .pricing {
+  width: 94vw;
+  -webkit-transform: translateX(3vw);
+          transform: translateX(3vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 5vw;
+}
+
+@media (max-width: 560px) {
+  .main .pricing {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.main .pricing .col {
+  width: 20vw;
+  background-color: #ffffff;
+  padding: 4vw 2vw;
+  border-radius: 1vw;
+  color: #3a3a3a;
+  -webkit-box-shadow: 0.3vw 0.3vw 0.5vw #cccccc;
+          box-shadow: 0.3vw 0.3vw 0.5vw #cccccc;
+}
+
+@media (max-width: 560px) {
+  .main .pricing .col {
+    text-align: center;
+    width: 80vw;
+    -webkit-box-shadow: 1vw 1vw 1.3vw #cccccc;
+            box-shadow: 1vw 1vw 1.3vw #cccccc;
+    margin: 0 0 5vw 0;
+  }
+}
+
+.main .pricing .col h1 {
+  font-size: 3vw;
+  color: #218c74;
+  padding: 0 0 1vw 0;
+}
+
+@media (max-width: 560px) {
+  .main .pricing .col h1 {
+    font-size: 10vw;
+  }
+}
+
+.main .pricing .col .disclaimer {
+  font-size: 1vw;
+}
+
+@media (max-width: 560px) {
+  .main .pricing .col .disclaimer {
+    font-size: 5vw;
+  }
+}
+
+.main .pricing .col .oldPrice {
+  font-size: 2vw;
+  text-decoration: line-through;
+}
+
+@media (max-width: 560px) {
+  .main .pricing .col .oldPrice {
+    font-size: 7vw;
+  }
+}
+
+.main .pricing .col .discount {
+  font-size: 2.5vw;
+  padding: 2vw 0 0 0;
+  color: #218c74;
+  font-weight: 700;
+}
+
+@media (max-width: 560px) {
+  .main .pricing .col .discount {
+    font-size: 8vw;
+  }
+}
+
+.main .pricing .col .price {
+  font-size: 2.5vw;
+  padding: 2vw 0 0 0;
+}
+
+@media (max-width: 560px) {
+  .main .pricing .col .price {
+    font-size: 8vw;
+  }
+}
+/*# sourceMappingURL=pricing.css.map */

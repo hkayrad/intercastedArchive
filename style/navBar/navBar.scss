@@ -1,0 +1,256 @@
+@import "../import/import.scss";
+
+.navBar {
+	height: 6rem;
+	background-color: color(bgPrimary);
+	display: flex;
+	position: fixed;
+	top: 0;
+	z-index: 90;
+
+	@include mobileS {
+		height: 4rem;
+	}
+
+	.left {
+		width: 35vw;
+
+		img {
+			width: 18rem;
+			height: auto;
+			margin: 1.4rem 0 0 2.5rem;
+
+			@include mobileS {
+				width: 65%;
+				margin: 1.3rem 0 0 1.4rem;
+			}
+		}
+	}
+
+	.right {
+		width: 65vw;
+		display: flex;
+		flex-direction: row-reverse;
+
+		.sideBar {
+			position: fixed;
+			top: 0;
+			right: 0;
+			height: 100vh;
+			width: 27rem;
+			z-index: 91;
+			background-color: color(text);
+			transition: 0.4s ease;
+			transform: translateX(100%);
+			display: flex;
+			justify-content: flex-end;
+
+			.sideList {
+				margin: 7rem 4rem 0 0;
+				list-style: none;
+				text-align: right;
+				background-color: color(text);
+
+				li {
+					margin-bottom: 1rem;
+
+					.sideItem {
+						text-decoration: none;
+						color: color(textSecondary);
+						background-color: color(text);
+						font-size: 3rem;
+						margin-bottom: 2rem;
+						font-weight: 600;
+						transition: 0.3s ease;
+
+						&:hover {
+							color: color(primary);
+						}
+					}
+
+					.contactUs {
+						display: none;
+
+						@include mobileS {
+							display: unset;
+						}
+					}
+
+					.languageSelection {
+						display: flex;
+						height: 3rem;
+						width: 23rem;
+						margin: auto auto 2rem auto;
+
+						p {
+							color: color(textSecondary);
+							background-color: color(text);
+							font-size: 3rem;
+							margin-bottom: 2rem;
+							font-weight: 600;
+							transition: 0.3s ease;
+						}
+
+						&:hover {
+							cursor: pointer;
+
+							p {
+								color: color(primary);
+							}
+
+							.triangle {
+								border-left-color: color(primary);
+							}
+						}
+
+						.triangle {
+							margin: 1.3rem 1rem 0.9rem auto;
+							width: 0;
+							height: 0;
+							border-top: 0.4rem solid transparent;
+							border-left: 0.8rem solid color(textSecondary);
+							border-bottom: 0.4rem solid transparent;
+							transition: 0.3s ease;
+						}
+					}
+				}
+
+				.languages {
+					display: flex;
+					flex-direction: column;
+					position: absolute;
+					color: color(textSecondary);
+					font-size: 5rem;
+					transition: 0.3s ease;
+					text-align: right;
+					right: 0;
+					transform: translateX(100%);
+
+					a {
+						font-size: 2rem;
+						color: color(textSecondary);
+						margin: auto 4rem 1rem 0;
+						transition: 0.3s ease;
+
+						&:hover {
+							color: color(primary);
+						}
+					}
+				}
+			}
+		}
+
+		.hamburger {
+			padding: 2rem 4rem 0 0;
+			margin: 0;
+			cursor: pointer;
+			width: 3rem;
+			position: absolute;
+			z-index: 92;
+
+			@include mobileS {
+				padding: 1.1rem 0.8rem 0 0;
+			}
+
+			.bar1,
+			.bar2,
+			.bar3 {
+				background-color: color(text);
+				width: 3rem;
+				height: 0.4rem;
+				border-radius: 0.2rem;
+				margin: 0 0 0.4rem 0;
+				transition: 0.4s;
+
+				@include mobileS {
+					width: 2.2rem;
+					height: 0.3rem;
+				}
+			}
+		}
+
+		.change {
+			.bar1 {
+				transform: rotate(-45deg) translate(-0.7rem, 0.4rem);
+				background-color: color(textSecondary);
+
+				@include mobileS {
+					transform: rotate(-45deg) translate(-0.55rem, 0.4rem);
+				}
+			}
+
+			.bar2 {
+				opacity: 1;
+				transform: translateX(-0.14rem) rotate(45deg);
+				background-color: color(textSecondary);
+
+				@include mobileS {
+					transform: rotate(45deg) translate(-0.14rem, 0.1rem);
+				}
+			}
+			.bar3 {
+				transform: rotate(45deg) translate(-0.7rem, -0.4rem);
+				background-color: color(textSecondary);
+
+				@include mobileS {
+					transform: rotate(45deg) translate(-0.55rem, -0.4rem);
+				}
+			}
+		}
+
+		.navList {
+			margin: 1.65rem 9rem 0 0;
+			padding: 0;
+
+			@include mobileS {
+				margin: 1.4rem 5rem 0 0;
+			}
+
+			.joinForFree {
+				text-decoration: none;
+				font-size: 1.6rem;
+				padding: 0.8rem;
+				margin: 0 0 0 2rem;
+				color: color(textSecondary);
+				background-color: color(primary);
+				font-weight: 600;
+				border-radius: 1rem;
+				transition: 0.3s ease;
+
+				@include mobileS {
+					font-size: 1rem;
+					margin: 0 0 0 0;
+				}
+
+				&:hover {
+					background-color: color(textSecondary);
+					color: color(primary);
+				}
+			}
+
+			.navItem {
+				text-decoration: none;
+				font-size: 2rem;
+				padding: 0;
+				margin: 0 0 0 2rem;
+				color: color(text);
+				font-weight: 600;
+				transition: 0.3s ease;
+
+				&:hover {
+					color: color(primary);
+				}
+
+				@include mobileS {
+					font-size: 1rem;
+				}
+			}
+
+			.contactUs {
+				@include mobileS {
+					display: none;
+				}
+			}
+		}
+	}
+}

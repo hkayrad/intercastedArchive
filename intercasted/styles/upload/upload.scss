@@ -1,0 +1,224 @@
+@import "../imports/import.scss";
+
+* {
+    font-size: 10px;
+}
+
+body {
+    background-color: color(bgColor);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    
+    div#fileButtons {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin-top: 12.3vw;
+
+        @include mobileIphone {
+            margin-top: 30vw;
+        }
+
+        @include mobileAndroid {
+            margin-top: 20vw;
+        }
+
+        div#columnVideoForm {
+            margin-top: 4.2vw;
+
+            @include mobileL {
+                margin-top: 16vw;
+            }
+
+            @include mobileM {
+                margin-top: 34.35vw;
+            }
+
+            @include mobileIphone {
+                margin-top: 45.35vw;
+            }
+
+            p#required {
+                color:#FF4E4E;
+                font-family: $font;
+                font-size: 2rem;
+                font-weight:600;
+                margin-left: 33.91vw;
+                width: 15.6vw;
+
+                @include mobileL {
+                    margin-left: 22.41vw;
+                }
+
+                @include mobileM {
+                    margin-left: 8.72vw;
+                }
+
+                @include mobileIphone {
+                    font-size: 1.7rem;
+                    margin-left: 3vw;
+                }
+
+                @include mobileAndroid {
+                    font-size: 1.4rem;
+                }
+
+            }
+            label#select {
+                font-size: 2.5rem;
+                color: white;
+                font-family: $font;
+                font-weight: 600;
+                border: none;
+                background-color: #218c74;
+                border-radius: 1.3vw;
+                margin-top: 1.04vw;
+                display: block; 
+                width: 15.6vw;
+                height: auto;
+                text-align: center;
+                padding: .65vw;
+                margin-right: 1vw;
+                margin-left: 32.91vw;
+                
+                @include mobileL {
+                    width: 25vw;
+                    margin-left: 21.41vw;
+                }
+                
+                @include mobileM {
+                    width: 40vw;
+                    margin-left: 7.72vw;
+                }
+
+                @include mobileIphone {
+                    font-size: 2rem;
+                    margin-left: 2vw;
+                    width: 46vw;
+                }
+                
+                @include mobileAndroid {
+                    font-size: 1.5rem;
+                }
+            }
+            input#fileSelect {
+                display: none;
+            }
+        }
+        
+        div#columnThumbForm {
+
+            @include mobileM {
+                margin-top: 14.7vw;
+            }
+
+            @include mobileAndroid {
+                margin-top: 24.4vw;
+            }
+
+            p#note{
+                color:#FF4E4E;
+                font-family: $font;
+                font-size: 2rem;
+                font-weight:600;
+                width: 15.6vw;
+                margin-left: 1vw;
+
+                @include mobileL {
+                    width: 25vw;
+                }
+
+                @include mobileM {
+                    width: 40vw;
+                }
+
+                @include mobileIphone {
+                    font-size: 1.7rem;
+                    width: 46vw;
+                }
+
+                @include mobileAndroid {
+                    font-size: 1.4rem;
+                }
+
+            }
+            label#selectThumbnail {
+                font-size: 2.5rem;
+                color: white;
+                font-family: $font;
+                font-weight: 600;
+                border: none;
+                background-color: #218c74;
+                border-radius: 1.3vw;
+                margin-top: 1.04vw;
+                display: block; 
+                width: 15.6vw;
+                height: auto;
+                text-align: center;
+                padding: .65vw;
+                margin-right: 1vw;
+                
+                @include mobileL {
+                    width: 25vw;
+                }
+
+                @include mobileM {
+                    width: 40vw;
+                }
+                
+                @include mobileIphone {
+                    font-size: 2rem;
+                    width: 46vw;
+                }
+
+                @include mobileAndroid {
+                    font-size: 1.5rem;
+                }
+            }
+        
+            input#thumbnailSelect {
+                display: none;
+            }
+        }
+    }
+    input#submit {
+        border: none;
+        width: 10.48vw;
+        height: auto;
+        background-color: #218c74;
+        border-radius: 1.3vw;
+        font-family: $font;
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+        padding: auto;
+        margin-top: 5vw;
+        margin-left: 44.64vw;
+        padding: .65vw;
+
+        @include mobileL {
+            width: 15vw;
+            margin-left:41vw;
+            margin-top: 8vw;
+        }
+
+        @include mobileM {
+            width: 30vw;
+            margin-left: 34.35vw;
+            margin-top: 10vw;
+        }
+
+        @include mobileIphone {
+            font-size: 2rem;
+            margin-top: 15vw;
+        }
+
+        @include mobileAndroid {
+            font-size: 1.7rem;
+        }
+    }
+}

@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+* {
+  font-size: 10px;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+aside {
+  margin-left: 3%;
+  margin-top: 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  height: auto;
+  position: fixed;
+}
+
+@media screen and (max-width: 550px) {
+  aside {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  aside {
+    margin-top: 15%;
+    margin-left: 0;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    position: relative;
+  }
+}
+
+aside a:hover,
+aside a:visited,
+aside a:link,
+aside a:active {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+  aside a {
+    width: 100%;
+  }
+}
+
+aside a div#card {
+  background-color: white;
+  margin: 5%;
+  width: 65%;
+  height: auto;
+  border: 0.05vw #f1f1f1 solid;
+  -webkit-box-shadow: 0.1vw 0.21vw 0.21vw 0px rgba(143, 136, 143, 0.41);
+          box-shadow: 0.1vw 0.21vw 0.21vw 0px rgba(143, 136, 143, 0.41);
+  border-radius: 0.21vw;
+}
+
+@media screen and (max-width: 840px) {
+  aside a div#card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  aside a div#card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  aside a div#card {
+    margin: 1%;
+    width: 95%;
+  }
+}
+
+aside a div#card p {
+  text-align: center;
+  color: #218c74;
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 840px) {
+  aside a div#card p {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  aside a div#card p {
+    font-size: 1.5rem;
+  }
+}
+
+section {
+  margin-left: 25%;
+  padding-top: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+@media screen and (max-width: 840px) {
+  section {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    margin-top: 7%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    margin-left: 40%;
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section {
+    padding-top: 2%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+section h1#notFoundError {
+  font-size: 3rem;
+  font-family: Raleway;
+  font-weight: 600;
+  color: #218c74;
+}
+
+@media screen and (max-width: 375px) {
+  section h1#notFoundError {
+    margin-left: 2%;
+  }
+}
+
+section div#stream {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 21vw;
+  height: auto;
+  margin-right: 3.81vw;
+}
+
+@media screen and (max-width: 840px) {
+  section div#stream {
+    width: 34vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section div#stream {
+    width: 56vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section div#stream {
+    margin-bottom: 3vw;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+section div#stream a:hover,
+section div#stream a:visited,
+section div#stream a:link,
+section div#stream a:active {
+  text-decoration: none;
+}
+
+section div#stream a#thumbnail {
+  width: 100%;
+  height: 12vw;
+  background-color: black;
+  border-radius: 0.21vw;
+}
+
+@media screen and (max-width: 840px) {
+  section div#stream a#thumbnail {
+    height: 19.5vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section div#stream a#thumbnail {
+    height: 32vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section div#stream a#thumbnail {
+    height: 56.3vw;
+  }
+}
+
+section div#stream a#thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 0.21vw;
+}
+
+section div#stream p#duration {
+  font-size: 1.4rem;
+  font-family: Raleway;
+  font-weight: 600;
+  z-index: 1;
+  position: absolute;
+  margin-left: 17.7vw;
+  margin-top: 10.8vw;
+  background-color: black;
+  color: #f1f1f1;
+}
+
+@media screen and (max-width: 840px) {
+  section div#stream p#duration {
+    margin-left: 26.7vw;
+    margin-top: 16.8vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section div#stream p#duration {
+    margin-left: 45vw;
+    margin-top: 28vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section div#stream p#duration {
+    font-size: 1.2rem;
+    margin-left: 86.3vw;
+    margin-top: 51.2vw;
+  }
+}
+
+section div#stream div#channel {
+  margin-top: 0.52vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 375px) {
+  section div#stream div#channel {
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    margin-left: 2%;
+  }
+}
+
+section div#stream div#channel a#channel {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 840px) {
+  section div#stream div#channel a#channel {
+    margin-top: 1vw;
+  }
+}
+
+section div#stream div#channel a#channel img {
+  width: 2.35vw;
+  height: 2.35vw;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 840px) {
+  section div#stream div#channel a#channel img {
+    width: 4vw;
+    height: 4vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section div#stream div#channel a#channel img {
+    width: 7vw;
+    height: 7vw;
+  }
+}
+
+section div#stream div#channel a#channel p {
+  font-size: 1.9rem;
+  font-weight: 600;
+  font-family: Raleway;
+  color: #7b7b7b;
+  margin: 5%;
+}
+
+@media screen and (max-width: 375px) {
+  section div#stream div#channel a#channel p {
+    font-size: 1.3rem;
+  }
+}
+
+section div#stream div#channel button {
+  width: 40%;
+  height: 1.9vw;
+  background-color: #218c74;
+  border-radius: 1.3vw;
+  font-family: Raleway;
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+  padding: auto;
+  border: none;
+  margin: 2%;
+}
+
+@media screen and (max-width: 840px) {
+  section div#stream div#channel button {
+    width: 60%;
+    height: 3vw;
+    margin-top: 1.8vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section div#stream div#channel button {
+    height: 5vw;
+    border-radius: 3vw;
+    margin-top: 2.2vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section div#stream div#channel button {
+    font-size: 1rem;
+  }
+}
+
+section div#stream a p#title {
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: .7vw;
+  font-weight: 600;
+  font-family: Raleway;
+  color: #3a3a3a;
+}
+
+@media screen and (max-width: 375px) {
+  section div#stream a p#title {
+    font-size: 1.5rem;
+    margin-left: 2%;
+  }
+}
+
+section div#stream p#desc {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Raleway;
+  color: #3a3a3a;
+  margin: 0;
+  margin-bottom: 2vw;
+  width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+  section div#stream p#desc {
+    font-size: 1.2rem;
+    margin-left: 2%;
+    width: auto;
+  }
+}
+/*# sourceMappingURL=discoverV2.css.map */

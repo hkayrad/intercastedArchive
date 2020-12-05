@@ -1,0 +1,105 @@
+@import "../imports/import.scss";
+
+body {
+    background-color: color(bgColor);
+}
+
+aside {
+    border: 2px dotted #218c74;
+    background-color: color(lightgrey);
+    margin-left: 0%;
+    margin-top: 3%;
+    align-items: center;
+    width: 16%;
+    height: 100%;
+    position: fixed;
+    div#curoption {
+        background-color: none;
+        margin: 10%;
+        width: 80%;
+        height: auto;
+        border: 0.05vw color(bgColor) solid;
+        box-shadow: 0.1vw 0.21vw 0.21vw 0px rgba(143, 136, 143, 0.41);
+        border-radius: 0.21vw;
+        a {
+            width: 100%;
+            background-color: color(primary);
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+        p {
+            text-align: center;
+            color: color(coloredBgText);
+            font-family: $font;
+            font-weight: 600;
+            font-size: 1.56vw;
+            font-stretch: ultra-expanded;
+        }
+    }
+    div#option {
+        background-color: none;
+        margin: 10%;
+        width: 80%;
+        height: auto;
+        border: 0.05vw color(bgColor) solid;
+        box-shadow: 0.1vw 0.21vw 0.21vw 0px rgba(143, 136, 143, 0.41);
+        border-radius: 0.21vw;
+        a {
+            width: 100%;
+            background-color: none;
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+        p {
+            text-align: center;
+            color: color(textColor);
+            font-family: $font;
+            font-weight: 600;
+            font-size: 1.56vw;
+            font-stretch: ultra-expanded;
+        }
+        button{
+            width: 100%;
+            height: auto;
+            background-color: color(bgColor);
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            padding-bottom: 0;
+            margin-bottom:0;
+        }
+    }
+}
+section {
+    margin-left: 18%;
+    margin-right: 20%;
+    margin-top: 7%;
+    width: 80%;
+    div#upProf {
+        display: table;
+        width: 80%;
+        height: auto;
+        display: flex;
+        img {
+            margin: 2vw 1vw 0 2vw;
+            width: 6vw;
+            height: 6vw;
+            border-radius: 50%;
+        }
+        h3 {
+            color: color(primary);
+            font-family: $font;
+            font-size: 3vw;
+        }
+    }
+}

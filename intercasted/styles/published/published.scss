@@ -1,0 +1,52 @@
+@import "../imports/import.scss";
+
+* {
+	font-size: 10px;
+}
+
+body {
+    background-color: color(bgColor);
+}
+
+main {
+    margin-top: 7vw;
+    margin-left: 5vw;
+
+    @include mobileL {
+        margin-top: 10vw;
+    }
+
+    @include mobileM {
+        margin-top: 13vw;
+    }
+
+    @include mobileIphone {
+        margin-top: 18vw;
+    }
+    h1 {
+        font-size: 2.5vw;
+        font-weight: 700;
+        font-family: $font;
+        color: color(primary);
+    }
+    p {
+        font-size: 1.8vw;
+        font-weight: 600;
+        font-family: $font;
+        color: color(textColor);
+
+        a:hover,
+        a:visited,
+        a:link,
+        a:active {
+            text-decoration: none;
+        }
+
+        a {
+            font-size: 1.8vw;
+            font-weight: 600;
+            font-family: $font;
+            color: color(textColor);
+        }
+    }
+}

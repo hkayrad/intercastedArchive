@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+body {
+  background-color: #f1f1f1;
+}
+
+.form_card {
+  width: 30%;
+  margin-left: 35%;
+  height: auto;
+  padding: 8px;
+}
+
+@media screen and (max-width: 840px) {
+  .form_card {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .form_card {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+.photo {
+  width: 50%;
+  padding-left: 25%;
+  padding-top: 125px;
+}
+
+@media screen and (max-width: 550px) {
+  .photo {
+    padding-top: 80px;
+  }
+}
+
+.signButton {
+  font-family: Raleway;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.signIn {
+  color: #218c74;
+  margin-left: 16%;
+  font-size: 16px;
+}
+
+.signUp {
+  color: #3a3a3a;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.labelColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.labels {
+  font-family: Raleway;
+  font-weight: bold;
+  color: #3a3a3a;
+  margin-top: 15px;
+  padding-left: 18%;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 375px) {
+  .labels {
+    font-size: 16px;
+  }
+}
+
+.formInputs {
+  margin: 0px;
+  border-radius: 5px;
+  font-family: Raleway;
+  border: solid 1px;
+  border-color: #9b9b9b;
+  margin-top: 8px;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 70%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 8px;
+  font-size: 17px;
+}
+
+.submitButton {
+  width: 100px;
+  height: 40px;
+  background-color: #218c74;
+  border-radius: 25px;
+  font-family: Raleway;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: auto;
+  margin-top: 40px;
+  margin-left: 37%;
+  border: none;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 375px) {
+  .submitButton {
+    margin-left: 30vw;
+  }
+}
+
+input#checkbox {
+  margin-top: 2vw;
+  margin-left: 4.7vw;
+}
+
+@media screen and (max-width: 840px) {
+  input#checkbox {
+    margin-left: 8vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  input#checkbox {
+    margin-left: 13.8vw;
+  }
+}
+
+label#cbL {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 375px) {
+  label#cbL {
+    font-size: 12px;
+  }
+}
+
+a#fp {
+  font-size: 10px;
+  font-family: Raleway;
+  margin-left: 11.5vw;
+}
+
+@media screen and (max-width: 840px) {
+  a#fp {
+    margin-left: 19vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  a#fp {
+    margin-left: 34.8vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  a#fp {
+    margin-left: 33vw;
+  }
+}
+/*# sourceMappingURL=SignIn.css.map */

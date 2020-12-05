@@ -1,0 +1,125 @@
+@import "../imports/import.scss";
+
+body {
+    background-color: color(bgColor);
+}
+
+.form_card {
+    width: 30%;
+    margin-left: 35%;
+    height: auto;
+    padding: 8px;
+    @include mobileL{
+        width: 50%;
+        margin-left: 25%;
+    }
+    @include mobileM{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+.photo {
+    width: 50%;
+    padding-left: 25%;
+    padding-top: 125px;
+    @include mobileM{
+        padding-top:80px ;
+    }
+}
+
+.signButton {
+    font-family: $font;
+    font-size: 18px;
+    margin-top: 25px;
+}
+.signIn {
+    color: color(primary);
+    margin-left: 16%;
+    font-size: 16px;
+}
+.signUp {
+    color: color(textColor);
+    font-size: 16px;
+    margin-left: 10px;
+}
+.labelColumn{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.labels {
+    font-family: $font;
+    font-weight: bold;
+    color: color(textColor);
+    margin-top: 15px;
+    padding-left: 18%;
+    font-size: 22px;
+    @include mobileIphone{
+        font-size: 16px;
+    }
+}
+.formInputs {
+    margin: 0px;
+    border-radius: 5px;
+    font-family: $font;
+    border: solid 1px;
+    border-color: #9b9b9b;
+    margin-top: 8px;
+    height: 40px;
+    box-sizing: border-box;
+    width:70%;
+    align-self: center;
+    padding-left:8px ;
+    font-size:17px ;
+}
+
+.submitButton {
+    width: 100px;
+    height: 40px;
+    background-color: color(primary);
+    border-radius: 25px;
+    font-family: $font;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: auto;
+    margin-top: 40px;
+    margin-left: 37%;
+    border: none;
+    font-size: 16px;
+    @include mobileIphone{
+        margin-left: 30vw;
+    }
+}
+input#checkbox{
+    margin-top: 2vw;
+    margin-left: 4.7vw;
+    @include mobileL{
+        margin-left: 8vw;
+    }
+    @include mobileM{
+        margin-left: 13.8vw;
+    }
+}
+label#cbL{
+    font-size: 14px;
+    @include mobileIphone{
+        font-size: 12px;
+    }
+}
+a#fp{
+    font-size: 10px; 
+    font-family: $font ;
+    margin-left:11.5vw;
+    @include mobileL{
+        margin-left: 19vw;
+    }
+    @include mobileM{
+        margin-left: 34.8vw;
+    }
+    @include mobileIphone{
+        margin-left: 33vw;
+    }
+}

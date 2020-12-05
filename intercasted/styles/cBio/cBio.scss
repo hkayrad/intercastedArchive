@@ -1,0 +1,72 @@
+@import "../imports/import.scss";
+
+body {
+    background-color: color(bgColor);
+}
+
+.form_card {
+    width: 30%;
+    margin-left: 35%;
+    height: auto;
+    padding: 8px;
+    @include mobileL{
+        width: 50%;
+        margin-left: 25%;
+    }
+    @include mobileM{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+.photo {
+    width: 50%;
+    padding-left: 25%;
+    padding-top: 125px;
+    @include mobileM{
+        padding-top:80px ;
+    }
+}
+.labelColumn{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.labels {
+    font-family: $font;
+    font-weight: bold;
+    color: color(textColor);
+    margin-top: 15px;
+    margin-left: 9vw;
+    font-size: 22px;
+}
+.formInputs {
+    margin: 0px;
+    border-radius: 5px;
+    font-family: $font;
+    border: solid 1px;
+    border-color: #9b9b9b;
+    margin-top: 8px;
+    box-sizing: border-box;
+    align-self: center;
+    padding-left:8px ;
+    font-size:17px ;
+    width: 50vw;
+    height: 15vw;
+}
+
+.submitButton {
+    width: 100px;
+    height: 40px;
+    background-color: color(primary);
+    border-radius: 25px;
+    font-family: $font;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: auto;
+    margin-top: 40px;
+    margin-left: 37%;
+    border: none;
+}

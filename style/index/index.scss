@@ -1,0 +1,445 @@
+@import "../import/import.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+	font-family: $font;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.main {
+	margin: 8rem 0 0 0;
+
+	.welcomer {
+		width: 94vw;
+		transform: translateX(3vw);
+		display: flex;
+		justify-content: center;
+
+		@include mobileS {
+			width: 100vw;
+			transform: translateX(0vw);
+		}
+
+		.left {
+			padding: 2vw 0 0.5vw;
+			width: 90%;
+			text-align: center;
+
+			@include mobileS {
+				width: 90%;
+			}
+
+			.title {
+				color: color(primary);
+				font-size: 6vw;
+				margin-bottom: 0.7vw;
+				font-weight: 900;
+
+				@include mobileS {
+					font-size: 8vw;
+				}
+			}
+
+			.slogan {
+				color: color(text);
+				font-size: 4vw;
+				margin: auto;
+				margin-bottom: 1vw;
+				font-weight: 700;
+				width: 75%;
+
+				@include mobileS {
+					width: 95%;
+					font-size: 6vw;
+				}
+			}
+
+			.tr {
+				width: 100%;
+				font-size: 3vw;
+			}
+
+			.text {
+				font-size: 2.5vw;
+				color: color(textLight);
+				margin: auto;
+				margin-top: 3vw;
+				margin-bottom: 4vw;
+				width: 70%;
+
+				@include mobileS {
+					font-size: 4.5vw;
+					width: 85%;
+				}
+
+				a {
+					font-size: 2.5vw;
+					font-weight: 600;
+					color: color(red);
+
+					@include mobileS {
+						font-size: 4.5vw;
+					}
+				}
+			}
+
+			.signUp {
+				font-size: 2.5vw;
+				font-weight: 700;
+				color: color(textSecondary);
+				background-color: color(primary);
+				text-decoration: none;
+				padding: 0.5vw 2vw;
+				margin: 3vw 2vw 5vw 2vw;
+				border-radius: 1vw;
+
+				@include mobileS {
+					font-size: 5vw;
+					padding: 1vw 3vw;
+					border-radius: 2vw;
+				}
+			}
+
+			.preRegister {
+				width: 100%;
+				margin-top: 1vw;
+
+				@include mobileS {
+					margin-top: 2vw;
+					text-align: center;
+					align-items: center;
+				}
+
+				.preRegisterInput {
+					width: 35%;
+					font-size: 2.5vw;
+					border: none;
+					color: color(textLight);
+					border-bottom: 1px solid color(text);
+
+					@include mobileS {
+						width: 80%;
+						font-size: 4.5vw;
+					}
+				}
+
+				.preRegisterSubmit {
+					background-color: color(primary);
+					color: color(textSecondary);
+					border: none;
+					font-size: 2vw;
+					border-radius: 1vw;
+					padding: 0.8vw 2vw;
+					margin-left: 2vw;
+					transition: 0.3s ease;
+
+					@include mobileS {
+						margin: 2vw 0 0 0;
+						font-size: 4.5vw;
+						padding: 1.2vw 23vw;
+						border-radius: 2vw;
+					}
+
+					&:hover {
+						background-color: color(textSecondary);
+						color: color(primary);
+						cursor: pointer;
+					}
+				}
+
+				p {
+					color: color(textLighter);
+					margin: 0.7vw 0 0 0;
+					font-size: 1vw;
+
+					@include mobileS {
+						font-size: 2vw;
+						margin: 1.5vw 0 0 0;
+					}
+
+					a {
+						color: color(textLighter);
+						font-size: 1vw;
+
+						@include mobileS {
+							font-size: 2vw;
+							margin: 1.5vw 0 0 0;
+						}
+					}
+				}
+
+				.preRegisterCampaign {
+					margin: 1.2vw 0 0 0;
+					width: 1.3vw;
+					height: 1.3vw;
+					border: 1px solid color(text);
+					vertical-align: bottom;
+
+					@include mobileS {
+						width: 3vw;
+						height: 3vw;
+						margin: 2vw 0 0 0;
+					}
+				}
+
+				.campaignEmailsLabel {
+					color: color(textLight);
+					font-size: 1.3vw;
+
+					@include mobileS {
+						font-size: 2.5vw;
+					}
+				}
+			}
+		}
+
+		/* .right {
+			width: 50%;
+
+			img {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+		} */
+	}
+
+	.productValues {
+		margin: 6vw 0 0 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+
+		.item {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			justify-content: center;
+			width: 25vw;
+			text-decoration: none;
+
+			img {
+				width: 12vw;
+				height: 12vw;
+				margin: auto;
+				z-index: 75;
+				/* background-color: #fff; */
+				transform: translateY(25%);
+				transition: 0.5s ease;
+			}
+
+			.subTitle {
+				margin: 2vw auto auto auto;
+				font-size: 2vw;
+				color: color(text);
+				transform: translateY(-200%);
+				z-index: 73;
+				transition: 0.5s ease;
+				opacity: 0;
+			}
+		}
+
+		.i1,
+		.i2,
+		.i3 {
+			&:hover {
+				img {
+					transform: translateY(0%);
+				}
+
+				.subTitle {
+					transform: translateY(0%);
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	.whatCanIDo {
+		width: 94vw;
+		transform: translateX(3vw);
+		margin: 10vw 0 0 0;
+		display: flex;
+
+		@include mobileS {
+			flex-direction: column;
+		}
+
+		.left {
+			width: 70%;
+
+			@include mobileS {
+				width: 100%;
+			}
+
+			.video {
+				width: 100%;
+			}
+		}
+
+		.right {
+			width: 30%;
+			padding: 4vw 0 0 2vw;
+
+			@include mobileS {
+				width: 100%;
+			}
+
+			.title {
+				color: color(primary);
+				font-size: 3vw;
+
+				@include mobileS {
+					font-size: 6vw;
+				}
+			}
+
+			.text {
+				margin: 0.5vw 0 0 0;
+				width: 90%;
+				font-size: 2vw;
+				color: color(text);
+				line-height: 3vw;
+
+				@include mobileS {
+					margin: 2vw 0 0 0;
+					font-size: 4vw;
+					line-height: 5vw;
+				}
+			}
+		}
+	}
+
+	.propertiesSection {
+		background-color: color(blue);
+		text-align: center;
+		margin: 10vw 0 0 0;
+
+		.title {
+			color: color(textSecondary);
+			font-size: 3.5vw;
+			padding: 5vw 0;
+
+			@include mobileS {
+				font-size: 9vw;
+			}
+		}
+
+		.propRow {
+			width: 90vw;
+			transform: translateX(5vw);
+			margin: 0 0 5vw 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+
+			@include mobileS {
+				flex-direction: column;
+				align-items: center;
+				margin: 0 0 0 0;
+			}
+
+			.first,
+			.second,
+			.third {
+				width: 30%;
+
+				@include mobileS {
+					width: 90%;
+					text-align: left;
+					justify-content: left;
+				}
+
+				.title {
+					display: flex;
+					flex-direction: row;
+					font-size: 2vw;
+					padding: 0 0 1vw 0;
+					color: color(textSecondary);
+					height: 4.4vw;
+
+					@include mobileS {
+						font-size: 6vw;
+						height: 8vw;
+					}
+
+					img {
+						width: 2vw;
+						height: 2vw;
+						margin-left: 1vw;
+
+						@include mobileS {
+							width: 7vw;
+							height: 7vw;
+							margin-left: 2vw;
+						}
+					}
+				}
+
+				.comingSoon {
+					font-size: 1.3vw;
+					color: color(textSecondary);
+					margin: 0 0 1vw 0;
+
+					@include mobileS {
+						height: auto;
+						font-size: 3.5vw;
+					}
+				}
+
+				.mobileAlign {
+					height: 2vw;
+
+					@include mobileS {
+						height: 7vw;
+					}
+				}
+
+				p {
+					color: color(textSecondary);
+					font-size: 1.2vw;
+					text-align: left;
+					width: 85%;
+
+					@include mobileS {
+						font-size: 4vw;
+						margin: auto auto 6vw auto;
+					}
+				}
+			}
+		}
+
+		.links {
+			padding: 2vw 0 6vw 0;
+		}
+
+		.linkButton {
+			font-size: 2.5vw;
+			font-weight: 700;
+			color: color(blue);
+			background-color: color(textSecondary);
+			text-decoration: none;
+			padding: 0.5vw 2vw;
+			margin: 0 2vw 5vw 2vw;
+			border-radius: 1vw;
+
+			@include mobileS {
+				font-size: 5vw;
+				padding: 1vw 3vw;
+				border-radius: 2vw;
+			}
+		}
+
+		.highlight {
+			color: color(textSecondary);
+			background-color: color(red);
+		}
+	}
+}

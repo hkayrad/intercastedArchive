@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+* {
+  font-size: 10px;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 840px) {
+  main {
+    padding-top: 6vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main {
+    padding-top: 10vw;
+  }
+}
+
+main section {
+  margin-left: 23%;
+  width: 70%;
+  padding-top: 5%;
+}
+
+@media screen and (max-width: 840px) {
+  main section {
+    width: 67%;
+    margin-left: 40%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main section {
+    margin-left: 38%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main section {
+    padding-top: 2%;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+main section h1#notFoundError {
+  font-size: 3rem;
+  font-family: Raleway;
+  font-weight: 600;
+  color: #218c74;
+}
+
+@media screen and (max-width: 375px) {
+  main section h1#notFoundError {
+    margin-left: 4%;
+  }
+}
+
+main section div#row {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+@media screen and (max-width: 840px) {
+  main section div#row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main section div#row a#thumbnailLink {
+  width: 16.9vw;
+  height: 9.48vw;
+  background-color: black;
+  border-radius: 0.21vw;
+}
+
+@media screen and (max-width: 840px) {
+  main section div#row a#thumbnailLink {
+    width: 51vw;
+    height: 28.68vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main section div#row a#thumbnailLink {
+    width: 61.57vw;
+    height: 34.6vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main section div#row a#thumbnailLink {
+    width: 100%;
+    height: 56.3vw;
+  }
+}
+
+main section div#row a#thumbnailLink img#thumbnail {
+  border-radius: 0.21vw;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main section div#row p#duration {
+  font-size: 1.4rem;
+  font-family: Raleway;
+  font-weight: 600;
+  z-index: 1;
+  position: absolute;
+  margin-left: 13.5vw;
+  margin-top: 8.2vw;
+  background-color: black;
+  color: #f1f1f1;
+}
+
+@media screen and (max-width: 840px) {
+  main section div#row p#duration {
+    margin-left: 43.5vw;
+    margin-top: 25.8vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main section div#row p#duration {
+    margin-left: 50vw;
+    margin-top: 30vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main section div#row p#duration {
+    font-size: 1.2rem;
+    margin-left: 86.3vw;
+    margin-top: 51.2vw;
+  }
+}
+
+main section div#row div#column {
+  width: 50%;
+  margin-left: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 840px) {
+  main section div#row div#column {
+    width: 75%;
+    margin-left: 0;
+    margin-bottom: 5vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main section div#row div#column {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main section div#row div#column {
+    margin-left: 2vw;
+  }
+}
+
+main section div#row div#column a:hover,
+main section div#row div#column a:visited,
+main section div#row div#column a:link,
+main section div#row div#column a:active {
+  text-decoration: none;
+}
+
+main section div#row div#column p#desc {
+  margin-top: 0.1%;
+  font-size: 1.3rem;
+  font-family: Raleway;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+
+@media screen and (max-width: 550px) {
+  main section div#row div#column p#desc {
+    font-size: 1.1rem;
+  }
+}
+
+main section div#row div#column a {
+  width: 100%;
+  height: auto;
+}
+
+main section div#row div#column a h2 {
+  margin: 0;
+  font-size: 3rem;
+  font-family: Raleway;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+
+@media screen and (max-width: 840px) {
+  main section div#row div#column a h2 {
+    margin-top: 1vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main section div#row div#column a h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main section div#row div#column a h2 {
+    font-size: 1.7rem;
+  }
+}
+
+main section div#row div#column a div#chRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 2.6vw;
+}
+
+main section div#row div#column a div#chRow img#channelImg {
+  width: 2.34vw;
+  height: 2.34vw;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 840px) {
+  main section div#row div#column a div#chRow img#channelImg {
+    width: 4vw;
+    height: 4vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main section div#row div#column a div#chRow img#channelImg {
+    width: 5vw;
+    height: 5vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main section div#row div#column a div#chRow img#channelImg {
+    width: 6vw;
+    height: 6vw;
+  }
+}
+
+main section div#row div#column a div#chRow p#channelN {
+  color: #3a3a3a;
+  margin: 1%;
+  font-size: 2.5rem;
+  font-family: Raleway;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 840px) {
+  main section div#row div#column a div#chRow p#channelN {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main section div#row div#column a div#chRow p#channelN {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main section div#row div#column a div#chRow p#channelN {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  main section div#row div#column a div#chRow {
+    margin-bottom: 2vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main section div#row div#column a div#chRow {
+    margin-bottom: 4vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main section div#row div#column a div#chRow {
+    margin-bottom: 5vw;
+  }
+}
+
+main section div#row div#column button#addToCalendar {
+  border: none;
+  width: 7vw;
+  height: 1.5vw;
+  background-color: #218c74;
+  border-radius: 1.3vw;
+  font-family: Raleway;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  padding: auto;
+  margin-top: .6vw;
+}
+
+@media screen and (max-width: 840px) {
+  main section div#row div#column button#addToCalendar {
+    width: 15vw;
+    height: 3vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main section div#row div#column button#addToCalendar {
+    width: 30vw;
+    height: 5vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main section div#row div#column button#addToCalendar {
+    font-size: 1.2rem;
+  }
+}
+
+main aside {
+  margin-left: 3%;
+  margin-top: 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  height: auto;
+  position: fixed;
+}
+
+@media screen and (max-width: 840px) {
+  main aside {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main aside {
+    margin-top: 15%;
+    margin-left: 0;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    position: relative;
+  }
+}
+
+main aside a:hover,
+main aside a:visited,
+main aside a:link,
+main aside a:active {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+  main aside a {
+    width: 100%;
+  }
+}
+
+main aside a div#card {
+  background-color: white;
+  margin: 5%;
+  width: 65%;
+  height: auto;
+  border: 0.05vw #F1F1F1 solid;
+  -webkit-box-shadow: 0.1vw 0.21vw 0.21vw 0px rgba(143, 136, 143, 0.41);
+          box-shadow: 0.1vw 0.21vw 0.21vw 0px rgba(143, 136, 143, 0.41);
+  border-radius: 0.21vw;
+}
+
+@media screen and (max-width: 840px) {
+  main aside a div#card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main aside a div#card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main aside a div#card {
+    margin: 1%;
+    width: 95%;
+  }
+}
+
+main aside a div#card p {
+  text-align: center;
+  color: #218c74;
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 840px) {
+  main aside a div#card p {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main aside a div#card p {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=openStreamsV2.css.map */

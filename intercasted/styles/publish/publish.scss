@@ -1,0 +1,246 @@
+@import "../imports/import.scss";
+
+* {
+	font-size: 10px;
+}
+
+body {
+	background-color: #f1f1f1;
+}
+
+main {
+	margin: 5rem 0 0 0;
+	padding: 3.13vw 2rem 0 4.16vw;
+
+	div#topBar {
+		height: 19.42vw;
+		width: auto;
+		display: flex;
+		flex-direction: row;
+
+		@include mobileL {
+			flex-direction: column;
+			height: auto;
+			height: 53vw;
+		}
+
+		img#thumbnail {
+			height: 100%;
+
+			@include mobileL {
+				width: auto;
+			}
+
+			@include mobileM {
+				width: 92vw;
+				height: auto;
+			}
+
+			@include mobileIphone {
+				max-height: 50vw;
+				object-fit: contain;
+				background-color: black;
+			}
+		}
+
+		div#columnForm {
+			display: flex;
+			flex-direction: column;
+			margin-left: 36vw;
+			width: 57%;
+			position: absolute;
+
+			@include mobileL {
+				margin-left: 0;
+				margin-top: 55vw;
+				width: 60vw;
+			}
+
+			@include mobileM {
+				margin-top: 67vw;
+				width: 92vw;
+			}
+
+			@include mobileIphone {
+				margin-top: 70vw;
+			}
+
+			input#title {
+				margin-bottom: 1vw;
+				width: 100%;
+				font-size: 3rem;
+				font-family: $font;
+				border: 2.5px solid #8a8a8a;
+				border-radius: 4px;
+				padding-left: 0.4vw;
+			}
+
+			div#rowForm {
+				display: flex;
+				flex-direction: row;
+
+				textarea#description {
+					margin-right: 1vw;
+					width: 44.89vw;
+					resize: none;
+					font-size: 1.7rem;
+					font-family: $font;
+					border: 2.5px solid #8a8a8a;
+					border-radius: 4px;
+					padding-left: 0.4vw;
+
+					@include mobileL {
+						font-size: 1.4rem;
+					}
+
+					@include mobileM {
+						width: 60vw;
+					}
+				}
+				div#dateColumn {
+					display: flex;
+					flex-direction: column;
+					width: 19%;
+					label#dateLabel {
+						font-size: 2rem;
+						font-family: $font;
+						color: color(textColor);
+						font-weight: 600;
+
+						@include mobileL {
+							font-size: 1.5rem;
+						}
+
+						input#date {
+							height: auto;
+							width: 100%;
+							border: 2.5px solid #8a8a8a;
+							border-radius: 4px;
+							font-size: 2rem;
+
+							@include mobileL {
+								width: 15vw;
+								font-size: 1.5rem;
+							}
+
+							@include mobileM {
+								width: 31vw;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	div#bottomBar {
+		display: flex;
+		flex-direction: row;
+
+		@include mobileL {
+			flex-direction: column;
+			margin-top: 6vw;
+		}
+
+		@include mobileM {
+			flex-direction: row;
+		}
+
+		input#publish {
+			border: none;
+			width: 10.48vw;
+			height: auto;
+			background-color: #218c74;
+			border-radius: 1.3vw;
+			font-family: $font;
+			font-size: 2.5rem;
+			font-weight: 600;
+			color: white;
+			text-align: center;
+			padding: auto;
+			margin-top: 1.04vw;
+			margin-left: 82vw;
+			padding: 0.65vw;
+			position: absolute;
+
+			@include mobileL {
+				width: 30vw;
+				margin-left: 63vw;
+				margin-top: 31.8vw;
+			}
+
+			@include mobileM {
+				margin-top: 53.5vw;
+			}
+
+			@include mobileIphone {
+				margin-top: 70.5vw;
+			}
+		}
+
+				
+		select#formInputs {
+			margin: 6vw 0 0 6vw;
+			border-radius: 5px;
+			font-family: $font;
+			font-weight: 600;
+			border: 2.5px solid #8a8a8a;
+			height: 2vw;
+			box-sizing: border-box;
+			width: 44.89vw;
+			color: color(textColor);
+			font-size: 2rem;
+			padding-left: .5vw;
+
+			@include mobileL {
+				margin-top: 7vw;
+				height: 4vw;
+				width: 60vw;
+				margin-left: 0;
+			}
+
+			@include mobileM {
+				position: absolute;
+				margin: 0;
+				width: 92vw;
+				height: 6vw;
+			}
+
+			@include mobileIphone {
+				height: 10vw;
+			}
+
+			.options {
+				font-size: 1.5rem;
+				font-family: $font;
+				color: color(textColor);
+				font-weight: 600;
+			}
+		}
+
+		p#fileNames {
+			color: #ff4e4e;
+			font-family: $font;
+			font-size: 2rem;
+			font-weight: 600;
+			width: 14vw;
+			margin-right: 1.04vw;
+
+			@include mobileL {
+				margin-left: 63vw;
+				width: 30vw;
+			}
+
+			@include mobileM {
+				margin-left: 0;
+				width: 45vw;
+				margin-top: 62vw;
+			}
+
+			@include mobileIphone {
+				font-size: 1.5rem;
+				margin-top: 95vw;
+			}
+		}
+	}
+}
+

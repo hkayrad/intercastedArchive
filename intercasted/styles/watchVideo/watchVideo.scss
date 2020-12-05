@@ -1,0 +1,479 @@
+@import "../imports/import.scss";
+
+* {
+    font-size: 10px;
+}
+
+body {
+    background-color: color(bgColor);
+}
+
+h1#videoError {
+    font-size: 4rem;
+    color: color(textColor);
+}
+
+#errorDesc {
+    font-size: 3rem;
+    color: color(textColor);
+}
+
+main {
+    margin: 5rem 0 0 0;
+    padding: 6rem 2rem 0 8rem;
+
+    @include mobileL {
+        padding-left: 0rem;
+        margin-top: 0rem;
+        padding-right: 0;
+    }
+
+    @include mobileM {
+        margin-top: 5rem;
+        padding: 0;
+    }
+
+    div#videoChat {
+        display: flex;
+        flex-direction: row;
+        height: 54.79vw;
+        width: 100%;
+
+        @include mobileM {
+            flex-direction: column;
+        }
+        
+
+        div#video {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 70%;
+
+            @include mobileL {
+                width: 80%;
+            }
+
+            @include mobileM {
+                width: 100%;
+            }
+
+            video#videoArea {
+                max-height: 36.56vw;
+                width: 63.35vw;
+                background-color: black;
+                
+                @include mobileM {
+                    max-height: 42.8vw;
+                }
+            }
+
+            img#videoThumb {
+                max-height: 36.56vw;
+                background-color: black;
+                object-fit: contain;
+                
+                @include mobileM {
+                    max-height: 42.8vw;
+                }
+            }
+            
+            div#videoInfo{
+                @include mobileL {
+                    margin-left: 3vw;
+                }
+
+                @include mobileM {
+                }
+
+                div#titleChannel {
+                    display: flex;
+                    flex-direction: row;
+
+                    h1#title {
+                        font-size: 1.8rem;
+                        font-weight: 600;
+                        font-family: $font;
+                        color: color(textColor);
+                        margin-top: 1.39vw;
+                        width: 53.8vw;
+
+                    }
+
+                }
+                a:hover,
+                a:visited,
+                a:link,
+                a:active {
+                    text-decoration: none;
+                }
+                div#channelRow {
+                    display: flex;
+                    flex-direction: row;
+
+                    @include mobileM {
+                        margin-left: 80vw;
+                    }
+
+                    @include mobileIphone {
+                        margin-left: 60vw;
+                    }
+
+                    a#channelLink {
+                        display: flex;
+                        flex-direction: row;
+
+                        img#channelImg {
+                            width: 2vw;
+                            height: 2vw;
+                            border-radius: 50%;
+                            margin-top: .5vw;
+    
+                            @include mobileL {
+                                width: 4vw;
+                                height: 4vw;
+                            }
+    
+                            @include mobileM {
+                                width: 6vw;
+                                height: 6vw;
+                            }
+                            
+                            @include mobileIphone {
+                                width: 8vw;
+                                height: 8vw;
+                            }
+                        }
+
+                        p#channel {
+                            font-size: 1.8rem;
+                            font-weight: 600;
+                            font-family: $font;
+                            color: color(textColor);
+                            margin-bottom: 0;
+                            margin-left: .5vw;
+                        }
+                    }
+
+                    .follow {
+                        border: none;
+                        width: 7vw;
+                        height: 1.8vw;
+                        background-color: color(primary);
+                        border-radius: 1vw;
+                        font-family: $font;
+                        font-size: 2rem;
+                        color: white;
+                        text-align: center;
+                        padding: auto;
+                        margin-top: .7vw;
+                        margin-left: 1vw;
+
+                        @include mobileAndroid {
+                            width: 20vw;
+                            height: 4vw;
+                            margin-top: 2vw;
+                            font-size: 1rem;
+                        }
+                    }
+                }   
+
+                .addToCalendar {
+                    border: none;
+                    width: 9vw;
+                    height: 1.5vw;
+                    background-color: color(primary);
+                    border-radius: 1.3vw;
+                    font-family: $font;
+                    font-size: 1.5rem;
+                    color: white;
+                    text-align: center;
+                    padding: auto;
+                    margin-top: .6vw;
+                    
+                    @include mobileL {
+                        width: 15vw;
+                        height: 3vw;
+                    }
+
+                    @include mobileM {
+                        width: 30vw;
+                        height: 5vw;
+                    }
+
+                    @include mobileIphone {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                p#description {
+                    resize: none;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    font-family: $font;
+                    color: color(textColor);
+
+                    @include mobileM {
+                        display: none;
+                    }
+                }
+                div#dateLikeShare {
+
+                    .tooltip {
+                        position: relative;
+                        display: inline-block;
+                        
+                        .share {
+                            background-color: #f1f1f1;
+                            border: none;
+                            color: white;
+                            text-align: center;
+                            text-decoration: none;
+                            display: inline-block;
+                            width: 3vw;
+
+                            @include mobileM {
+                            }
+
+                            img {
+                                width: 2vw;
+                                height: auto;
+                            }
+                        
+                            .tooltiptext {
+                                visibility: hidden;
+                                width: 6vw;
+                                background-color: #555;
+                                color: #fff;
+                                text-align: center;
+                                border-radius: 6px;
+                                padding: 5px;
+                                position: absolute;
+                                z-index: 1;
+                                bottom: 150%;
+                                left: 50%;
+                                margin-left: -75px;
+                                opacity: 0;
+                                transition: opacity 0.3s;
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    top: 100%;
+                                    left: 50%;
+                                    margin-left: -5px;
+                                    border-width: 5px;
+                                    border-style: solid;
+                                    border-color: #555 transparent transparent transparent;
+                                }
+                            }
+                            &:hover {
+                                .tooltiptext {
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                    .likeDislike {
+                        background-color: #f1f1f1;
+                        border: none;
+                        color: white;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                            width: 2vw;
+                            height: 2vw;
+
+                        @include mobileM {
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+        
+        form {
+            width: 25%;
+
+            @include mobileM {
+                width: 100%;
+            }
+            
+            div#chat {
+                background-color: gray;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 36.56vw;
+                border: 1px solid gray;
+                margin-left: 3%;
+
+                @include mobileL {
+                    margin-left: 0;
+                    height: 42.6vw;
+                }
+
+                @include mobileM {
+                    height: auto;
+                    border: none;
+                    margin-top: 19vw;
+                }
+
+                @include mobileIphone {
+                    margin-top: 25vw;
+                }
+
+                h1#chatT {
+                    text-align: center;
+                    font-size: 3rem;
+                    color: color(textColor);
+                    font-family: $font;
+                    font-weight: 800; 
+                    border-bottom: 1px solid;
+                    margin: 0;
+
+                    @include mobileL {
+                        font-size: 2rem;
+                    }
+
+                    @include mobileM {
+                        font-size: 3rem;
+                        border-top: 1px solid grey;
+                    }
+                }
+
+                div#messages {
+                    height: 32vw;
+                    margin-top: 1vw;
+
+                    @include mobileL {
+                        height: 36vw;
+                    }
+
+                    @include mobileM {
+                        height: 50vw;
+                    }
+
+                    @include mobileIphone {
+                        height: 100vw;
+                    }
+
+                    @include mobileAndroid {
+                        height: 60vw;
+                    }
+
+                    div#pPMessage {
+                        display: flex;
+                        flex-direction: row;
+                        border-bottom: .5px solid;
+                        margin-left: 1vw;
+                        margin-right: 1vw;
+
+                        
+                        a#profile {
+                            img#chatPP {
+                                height: 2vw;
+                                width: 2vw;
+                                border-radius: 50%;
+
+                                @include mobileL {
+                                    height: 2.5vw;
+                                    width: 2.5vw;
+                                }
+
+                                @include mobileM {
+                                    height: 5vw;
+                                    width: 5vw;
+                                    margin-top: .4vw;
+                                }
+
+                                @include mobileIphone {
+                                    height: 8vw;
+                                    width: 8vw;
+                                }
+                            }
+                        }
+
+                        p#chatMessage {
+                            font-size: 2rem;
+                            margin-left: .5vw;
+                            font-family: $font;
+                            font-weight: 600;
+                            color: color(textColor);
+                            margin-top: .3vw;
+
+                            @include mobileL {
+                                font-size: 1.2rem;
+                            }
+
+                            @include mobileM {
+                                font-size: 2rem;
+                                margin-bottom: 2vw;
+                                margin-left: 1.5vw;
+                            }
+
+                            @include mobileIphone {
+                                margin-bottom: 3vw;
+                            }
+
+                        }
+                    }
+                }
+                div#chatWrite {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 1%;
+
+                    input#chatInput {
+                        width: 85%;
+                        height: 2vw;
+                        font-size: 1.5rem;
+                        font-family: $font;
+                        font-weight: 600;
+                        color: color(textColor);
+                        border-radius: 1vw;
+                        border: solid 1px;
+
+                        @include mobileM {
+                            height: 5vw;
+                            border-radius: 2vw;
+                            width: 95%;
+                        }
+
+                        @include mobileIphone {
+                            width: 90%;
+                            height: 8vw;
+                            border-radius: 4vw;
+                        }
+                
+                    }
+
+                    input#chatSubmit {
+                        height: 2.1vw;
+                        width: 2.1vw;
+                        border-radius: 50%;
+                        background-color: color(primary);
+                        border: none;
+                        margin-left: 1vw;
+                        font-size: 1.2rem;
+                        font-family: $font;
+                        color: white;
+
+                        @include mobileM {
+                            height: 5vw;
+                            width: 5vw;
+                        }
+
+                        @include mobileIphone {
+                            height: 8vw;
+                            width: 8vw;
+                            margin-left: 2vw;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

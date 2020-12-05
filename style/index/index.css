@@ -1,0 +1,580 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: Raleway;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  margin: 8rem 0 0 0;
+}
+
+.main .welcomer {
+  width: 94vw;
+  -webkit-transform: translateX(3vw);
+          transform: translateX(3vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* .right {
+			width: 50%;
+
+			img {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+		} */
+}
+
+@media (max-width: 560px) {
+  .main .welcomer {
+    width: 100vw;
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
+  }
+}
+
+.main .welcomer .left {
+  padding: 2vw 0 0.5vw;
+  width: 90%;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .left {
+    width: 90%;
+  }
+}
+
+.main .welcomer .left .title {
+  color: #218c74;
+  font-size: 6vw;
+  margin-bottom: 0.7vw;
+  font-weight: 900;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .left .title {
+    font-size: 8vw;
+  }
+}
+
+.main .welcomer .left .slogan {
+  color: #3a3a3a;
+  font-size: 4vw;
+  margin: auto;
+  margin-bottom: 1vw;
+  font-weight: 700;
+  width: 75%;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .left .slogan {
+    width: 95%;
+    font-size: 6vw;
+  }
+}
+
+.main .welcomer .left .tr {
+  width: 100%;
+  font-size: 3vw;
+}
+
+.main .welcomer .left .text {
+  font-size: 2.5vw;
+  color: #545454;
+  margin: auto;
+  margin-top: 3vw;
+  margin-bottom: 4vw;
+  width: 70%;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .left .text {
+    font-size: 4.5vw;
+    width: 85%;
+  }
+}
+
+.main .welcomer .left .text a {
+  font-size: 2.5vw;
+  font-weight: 600;
+  color: #f74040;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .left .text a {
+    font-size: 4.5vw;
+  }
+}
+
+.main .welcomer .left .signUp {
+  font-size: 2.5vw;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #218c74;
+  text-decoration: none;
+  padding: 0.5vw 2vw;
+  margin: 3vw 2vw 5vw 2vw;
+  border-radius: 1vw;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .left .signUp {
+    font-size: 5vw;
+    padding: 1vw 3vw;
+    border-radius: 2vw;
+  }
+}
+
+.main .welcomer .left .preRegister {
+  width: 100%;
+  margin-top: 1vw;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .left .preRegister {
+    margin-top: 2vw;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.main .welcomer .left .preRegister .preRegisterInput {
+  width: 35%;
+  font-size: 2.5vw;
+  border: none;
+  color: #545454;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .left .preRegister .preRegisterInput {
+    width: 80%;
+    font-size: 4.5vw;
+  }
+}
+
+.main .welcomer .left .preRegister .preRegisterSubmit {
+  background-color: #218c74;
+  color: #ffffff;
+  border: none;
+  font-size: 2vw;
+  border-radius: 1vw;
+  padding: 0.8vw 2vw;
+  margin-left: 2vw;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .left .preRegister .preRegisterSubmit {
+    margin: 2vw 0 0 0;
+    font-size: 4.5vw;
+    padding: 1.2vw 23vw;
+    border-radius: 2vw;
+  }
+}
+
+.main .welcomer .left .preRegister .preRegisterSubmit:hover {
+  background-color: #ffffff;
+  color: #218c74;
+  cursor: pointer;
+}
+
+.main .welcomer .left .preRegister p {
+  color: #878787;
+  margin: 0.7vw 0 0 0;
+  font-size: 1vw;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .left .preRegister p {
+    font-size: 2vw;
+    margin: 1.5vw 0 0 0;
+  }
+}
+
+.main .welcomer .left .preRegister p a {
+  color: #878787;
+  font-size: 1vw;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .left .preRegister p a {
+    font-size: 2vw;
+    margin: 1.5vw 0 0 0;
+  }
+}
+
+.main .welcomer .left .preRegister .preRegisterCampaign {
+  margin: 1.2vw 0 0 0;
+  width: 1.3vw;
+  height: 1.3vw;
+  border: 1px solid #3a3a3a;
+  vertical-align: bottom;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .left .preRegister .preRegisterCampaign {
+    width: 3vw;
+    height: 3vw;
+    margin: 2vw 0 0 0;
+  }
+}
+
+.main .welcomer .left .preRegister .campaignEmailsLabel {
+  color: #545454;
+  font-size: 1.3vw;
+}
+
+@media (max-width: 560px) {
+  .main .welcomer .left .preRegister .campaignEmailsLabel {
+    font-size: 2.5vw;
+  }
+}
+
+.main .productValues {
+  margin: 6vw 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main .productValues .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25vw;
+  text-decoration: none;
+}
+
+.main .productValues .item img {
+  width: 12vw;
+  height: 12vw;
+  margin: auto;
+  z-index: 75;
+  /* background-color: #fff; */
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.main .productValues .item .subTitle {
+  margin: 2vw auto auto auto;
+  font-size: 2vw;
+  color: #3a3a3a;
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+  z-index: 73;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+
+.main .productValues .i1:hover img,
+.main .productValues .i2:hover img,
+.main .productValues .i3:hover img {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.main .productValues .i1:hover .subTitle,
+.main .productValues .i2:hover .subTitle,
+.main .productValues .i3:hover .subTitle {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+}
+
+.main .whatCanIDo {
+  width: 94vw;
+  -webkit-transform: translateX(3vw);
+          transform: translateX(3vw);
+  margin: 10vw 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 560px) {
+  .main .whatCanIDo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.main .whatCanIDo .left {
+  width: 70%;
+}
+
+@media (max-width: 560px) {
+  .main .whatCanIDo .left {
+    width: 100%;
+  }
+}
+
+.main .whatCanIDo .left .video {
+  width: 100%;
+}
+
+.main .whatCanIDo .right {
+  width: 30%;
+  padding: 4vw 0 0 2vw;
+}
+
+@media (max-width: 560px) {
+  .main .whatCanIDo .right {
+    width: 100%;
+  }
+}
+
+.main .whatCanIDo .right .title {
+  color: #218c74;
+  font-size: 3vw;
+}
+
+@media (max-width: 560px) {
+  .main .whatCanIDo .right .title {
+    font-size: 6vw;
+  }
+}
+
+.main .whatCanIDo .right .text {
+  margin: 0.5vw 0 0 0;
+  width: 90%;
+  font-size: 2vw;
+  color: #3a3a3a;
+  line-height: 3vw;
+}
+
+@media (max-width: 560px) {
+  .main .whatCanIDo .right .text {
+    margin: 2vw 0 0 0;
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+}
+
+.main .propertiesSection {
+  background-color: #0059ff;
+  text-align: center;
+  margin: 10vw 0 0 0;
+}
+
+.main .propertiesSection .title {
+  color: #ffffff;
+  font-size: 3.5vw;
+  padding: 5vw 0;
+}
+
+@media (max-width: 560px) {
+  .main .propertiesSection .title {
+    font-size: 9vw;
+  }
+}
+
+.main .propertiesSection .propRow {
+  width: 90vw;
+  -webkit-transform: translateX(5vw);
+          transform: translateX(5vw);
+  margin: 0 0 5vw 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 560px) {
+  .main .propertiesSection .propRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 0 0;
+  }
+}
+
+.main .propertiesSection .propRow .first,
+.main .propertiesSection .propRow .second,
+.main .propertiesSection .propRow .third {
+  width: 30%;
+}
+
+@media (max-width: 560px) {
+  .main .propertiesSection .propRow .first,
+  .main .propertiesSection .propRow .second,
+  .main .propertiesSection .propRow .third {
+    width: 90%;
+    text-align: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+.main .propertiesSection .propRow .first .title,
+.main .propertiesSection .propRow .second .title,
+.main .propertiesSection .propRow .third .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 2vw;
+  padding: 0 0 1vw 0;
+  color: #ffffff;
+  height: 4.4vw;
+}
+
+@media (max-width: 560px) {
+  .main .propertiesSection .propRow .first .title,
+  .main .propertiesSection .propRow .second .title,
+  .main .propertiesSection .propRow .third .title {
+    font-size: 6vw;
+    height: 8vw;
+  }
+}
+
+.main .propertiesSection .propRow .first .title img,
+.main .propertiesSection .propRow .second .title img,
+.main .propertiesSection .propRow .third .title img {
+  width: 2vw;
+  height: 2vw;
+  margin-left: 1vw;
+}
+
+@media (max-width: 560px) {
+  .main .propertiesSection .propRow .first .title img,
+  .main .propertiesSection .propRow .second .title img,
+  .main .propertiesSection .propRow .third .title img {
+    width: 7vw;
+    height: 7vw;
+    margin-left: 2vw;
+  }
+}
+
+.main .propertiesSection .propRow .first .comingSoon,
+.main .propertiesSection .propRow .second .comingSoon,
+.main .propertiesSection .propRow .third .comingSoon {
+  font-size: 1.3vw;
+  color: #ffffff;
+  margin: 0 0 1vw 0;
+}
+
+@media (max-width: 560px) {
+  .main .propertiesSection .propRow .first .comingSoon,
+  .main .propertiesSection .propRow .second .comingSoon,
+  .main .propertiesSection .propRow .third .comingSoon {
+    height: auto;
+    font-size: 3.5vw;
+  }
+}
+
+.main .propertiesSection .propRow .first .mobileAlign,
+.main .propertiesSection .propRow .second .mobileAlign,
+.main .propertiesSection .propRow .third .mobileAlign {
+  height: 2vw;
+}
+
+@media (max-width: 560px) {
+  .main .propertiesSection .propRow .first .mobileAlign,
+  .main .propertiesSection .propRow .second .mobileAlign,
+  .main .propertiesSection .propRow .third .mobileAlign {
+    height: 7vw;
+  }
+}
+
+.main .propertiesSection .propRow .first p,
+.main .propertiesSection .propRow .second p,
+.main .propertiesSection .propRow .third p {
+  color: #ffffff;
+  font-size: 1.2vw;
+  text-align: left;
+  width: 85%;
+}
+
+@media (max-width: 560px) {
+  .main .propertiesSection .propRow .first p,
+  .main .propertiesSection .propRow .second p,
+  .main .propertiesSection .propRow .third p {
+    font-size: 4vw;
+    margin: auto auto 6vw auto;
+  }
+}
+
+.main .propertiesSection .links {
+  padding: 2vw 0 6vw 0;
+}
+
+.main .propertiesSection .linkButton {
+  font-size: 2.5vw;
+  font-weight: 700;
+  color: #0059ff;
+  background-color: #ffffff;
+  text-decoration: none;
+  padding: 0.5vw 2vw;
+  margin: 0 2vw 5vw 2vw;
+  border-radius: 1vw;
+}
+
+@media (max-width: 560px) {
+  .main .propertiesSection .linkButton {
+    font-size: 5vw;
+    padding: 1vw 3vw;
+    border-radius: 2vw;
+  }
+}
+
+.main .propertiesSection .highlight {
+  color: #ffffff;
+  background-color: #f74040;
+}
+/*# sourceMappingURL=index.css.map */

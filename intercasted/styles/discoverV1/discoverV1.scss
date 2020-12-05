@@ -1,0 +1,228 @@
+@import "../imports/import.scss";
+
+* {
+	font-size: 10px;
+}
+
+body {
+	background-color: color(bgColor);
+}
+
+main {
+	padding-top: 9vw;
+	overflow-y: hidden;
+
+	@include mobileL {
+		padding-top: 15vw;
+	}
+
+	@include mobileIphone {
+		padding-top: 20vw;
+	}
+
+	div#container {
+		display: grid;
+		grid-template-columns: auto auto auto;
+
+		@include mobileL {
+			grid-template-columns: auto auto;
+		}
+
+		@include mobileM {
+			grid-template-columns: none;
+		}
+
+		div#categoryBottom {
+			margin: 0 7.5vw 7vw 7.5vw;
+			width: 19.8vw;
+			height: auto;
+
+			@include mobileL {
+				margin-left: 4vw;
+				margin-right: 4vw;
+				width: 40vw;
+			}
+
+			@include mobileM {
+				width: 85vw;
+				margin-left: 5.5vw;
+			}
+
+			@include mobileIphone {
+				width: 90vw;
+				margin-left: 5vw;
+			}
+
+			p#edu {
+				color: color(coloredBgText);
+				font-size: 3rem;
+				font-family: $font;
+				font-weight: 600;
+				z-index: 1;
+				position: absolute;
+				margin-top: 4.1vw;
+				margin-left: 0.6vw;
+
+				@include mobileL {
+					font-size: 2.5rem;
+					margin-left: 3.86vw;
+					margin-top: 9.22vw;
+				}
+
+				@include mobileM {
+					margin-left: 17.85vw;
+					margin-top: 20.81vw;
+				}
+
+				@include mobileIphone {
+					margin-left: 7.35vw;
+				}
+			}
+
+			p#hobbies {
+				color: color(coloredBgText);
+				font-size: 3rem;
+				font-family: $font;
+				font-weight: 600;
+				z-index: 1;
+				position: absolute;
+				margin-top: 4.1vw;
+				margin-left: 6.22vw;
+
+				@include mobileL {
+					font-size: 2.5rem;
+					margin-left: 14.4vw;
+					margin-top: 9.22vw;
+				}
+
+				@include mobileM {
+					margin-left: 33.95vw;
+					margin-top: 20.81vw;
+				}
+
+				@include mobileIphone {
+					margin-left: 31.94vw;
+				}
+			}
+
+			p#media {
+				color: color(coloredBgText);
+				font-size: 3rem;
+				font-family: $font;
+				font-weight: 600;
+				z-index: 1;
+				position: absolute;
+				margin-top: 4.1vw;
+				margin-left: 6.95vw;
+
+				@include mobileL {
+					font-size: 2.5rem;
+					margin-left: 15.92vw;
+					margin-top: 9.22vw;
+				}
+
+				@include mobileM {
+					margin-left: 36.27vw;
+					margin-top: 20.81vw;
+				}
+
+				@include mobileIphone {
+					margin-left: 35.49vw;
+				}
+			}
+
+			p#movie {
+				color: color(coloredBgText);
+				font-size: 3rem;
+				font-family: $font;
+				font-weight: 600;
+				z-index: 1;
+				position: absolute;
+				margin-top: 4.1vw;
+				margin-left: 3.51vw;
+
+				@include mobileL {
+					font-size: 2.5rem;
+					margin-top: 9.22vw;
+					margin-left: 9.34vw;
+				}
+
+				@include mobileM {
+					margin-left: 26.22vw;
+					margin-top: 20.81vw;
+				}
+
+				@include mobileIphone {
+					margin-left: 20.14vw;
+				}
+			}
+
+			p#lifeStyle {
+				color: color(coloredBgText);
+				font-size: 3rem;
+				font-family: $font;
+				font-weight: 600;
+				z-index: 1;
+				position: absolute;
+				margin-top: 4.1vw;
+				margin-left: 6vw;
+
+				@include mobileL {
+					font-size: 2.5rem;
+					margin-left: 13.74vw;
+					margin-top: 9.22vw;
+				}
+
+				@include mobileM {
+					margin-left: 32.93vw;
+					margin-top: 20.81vw;
+				}
+
+				@include mobileIphone {
+					margin-left: 30.39vw;
+				}
+			}
+
+			p#productOv {
+				color: color(coloredBgText);
+				font-size: 3rem;
+				font-family: $font;
+				font-weight: 600;
+				z-index: 1;
+				position: absolute;
+				margin-top: 4.1vw;
+				margin-left: 2.83vw;
+
+				@include mobileL {
+					font-size: 2.5rem;
+					margin-left: 7.82vw;
+					margin-top: 9.22vw;
+				}
+
+				@include mobileM {
+					margin-left: 23.91vw;
+					margin-top: 20.81vw;
+				}
+
+				@include mobileIphone {
+					margin-left: 16.59vw;
+				}
+			}
+
+			a {
+				img#catPhoto {
+					width: 100%;
+					height: auto;
+					border-radius: 0.21vw;
+				}
+			}
+
+			a:hover,
+			a:visited,
+			a:link,
+			a:active {
+				text-decoration: none;
+			}
+		}
+	}
+}

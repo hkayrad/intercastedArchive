@@ -1,0 +1,426 @@
+@import "../imports/import.scss";
+
+* {
+	font-size: 10px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	.navBar {
+		height: 6rem;
+		width: 100%;
+		background-color: white;
+		border-bottom: 0.01rem #cccccc solid;
+		position: fixed;
+		top: 0;
+		display: flex;
+		z-index: 95;
+
+		.navLeft {
+			height: 6rem;
+			width: 50%;
+			display: flex;
+
+			.sideBar {
+				position: fixed;
+				top: 0;
+				left: 0;
+				height: 100vh;
+				width: 25rem;
+				background-color: color(coloredBgText);
+				z-index: 96;
+				transform: translateX(-100%);
+				transition: 0.3s ease;
+
+				.sideList {
+					list-style: none;
+					margin: 6rem 0 0 0;
+					padding: 0 0 0 2rem;
+
+					li {
+						margin: 1rem 0 0 0;
+					}
+
+					.sideItem {
+						font-family: $font;
+						font-size: 2rem;
+						text-decoration: none;
+						color: color(textColor);
+					}
+				}
+			}
+
+			.hamburger {
+				padding: 2rem 0 0 2rem;
+				margin: 0;
+				cursor: pointer;
+				width: 3rem;
+				position: absolute;
+				z-index: 97;
+
+				.bar1,
+				.bar2,
+				.bar3 {
+					background-color: color(textColor);
+					width: 3rem;
+					height: 0.4rem;
+					border-radius: 0.2rem;
+					margin: 0 0 0.4rem 0;
+					transition: 0.4s;
+
+					@include mobileM {
+						width: 2.5rem;
+						height: 0.3rem;
+						border-radius: 0.15rem;
+						margin: 0 0 0.3rem 0;
+					}
+				}
+
+				@include mobileM {
+					padding: 1.75rem 0 0 1.25rem;
+					width: 2rem;
+				}
+			}
+
+			.change {
+				.bar1 {
+					transform: rotate(-45deg) translate(-0.7rem, 0.4rem);
+
+					@include mobileM {
+						transform: rotate(-45deg) translate(-0.5rem, 0.3rem);
+					}
+				}
+
+				.bar2 {
+					opacity: 1;
+					transform: translateX(-0.15rem) rotate(45deg);
+				}
+				.bar3 {
+					transform: rotate(45deg) translate(-0.7rem, -0.4rem);
+					@include mobileM {
+						transform: rotate(45deg) translate(-0.5rem, -0.3rem);
+					}
+				}
+			}
+
+			.logoContainer {
+				height: 6rem;
+				width: 17rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 0 0 0 5rem;
+
+				a {
+					width: 15rem;
+					margin: auto;
+					margin-left: 2rem;
+					margin-top: 1.2rem;
+					padding: 0;
+
+					.logoText {
+						height: auto;
+						width: 15rem;
+
+						@include mobileL {
+							width: 100%;
+						}
+
+						@include mobileM {
+							display: none;
+						}
+					}
+
+					.logo {
+						height: 2.64rem;
+						width: 2rem;
+						display: none;
+						margin: 0;
+
+						@include mobileM {
+							display: inline;
+						}
+					}
+
+					@include mobileM {
+						width: 40%;
+					}
+				}
+
+				@include mobileL {
+					width: 75%;
+				}
+
+				@include mobileM {
+					height: 5rem;
+					width: 65%;
+				}
+			}
+
+			@include mobileL {
+				width: 45%;
+			}
+
+			@include mobileM {
+				height: 5rem;
+				width: 25%;
+			}
+		}
+
+		.navRight {
+			height: 6rem;
+			width: 50%;
+			display: flex;
+			flex-direction: row-reverse;
+
+			.profile {
+				width: 4rem;
+				height: 4rem;
+				background-color: none;
+				border-radius: 50%;
+				margin: 1rem 1rem 0 1rem;
+
+				img {
+					border-radius: 50%;
+					width: 4rem;
+					height: 4rem;
+
+					@include mobileM {
+						width: 3rem;
+						height: 3rem;
+					}
+				}
+
+				@include mobileM {
+					height: 3rem;
+					width: 3rem;
+					margin: 1rem 1rem 0 0;
+				}
+			}
+
+			.signInBtn {
+				margin: 1rem 1rem 1rem 1rem;
+				padding-right: 1.5rem;
+				padding-left: 1.5rem;
+				padding-top: 0.8rem;
+				font-family: $font;
+				font-weight: 800;
+				font-size: 1.8rem;
+				background-color: color(primary);
+				color: color(coloredBgText);
+				border-radius: 2rem;
+				text-decoration: none;
+
+				@include mobileL {
+					font-size: 1.8rem;
+					margin: 1rem 1rem 0 0;
+				}
+
+				@include mobileM {
+					font-size: 1rem;
+					border-radius: 2rem;
+					margin: 1rem 1rem 1rem 0;
+				}
+			}
+
+			.notifBtn {
+				margin: 1rem 0rem 0 0;
+				width: 4rem;
+				height: 4rem;
+				font-family: $font;
+				font-weight: 800;
+				font-size: 1.6rem;
+				background-color: color(primary);
+				color: color(coloredBgText);
+				border-radius: 2rem;
+				text-decoration: none;
+				display: flex;
+				flex-direction: row-reverse;
+				overflow: hidden;
+				transition: 0.8s ease;
+
+				.notifIcon {
+					margin: 0.5rem 0.5rem 0 0;
+					width: 3rem;
+					height: 3rem;
+				}
+
+				.notifText {
+					margin: auto;
+					margin-right: 1rem;
+					font-size: 1.8rem;
+				}
+
+				@include mobileL {
+					display: none;
+				}
+			}
+
+			.notifBtn:hover {
+				width: 16.5rem;
+			}
+
+			.uploadBtn {
+				margin: 1rem 1rem 0 0;
+				width: 4rem;
+				height: 4rem;
+				font-family: $font;
+				font-weight: 800;
+				font-size: 1.6rem;
+				background-color: color(primary);
+				color: color(coloredBgText);
+				border-radius: 2rem;
+				text-decoration: none;
+				display: flex;
+				flex-direction: row-reverse;
+				overflow: hidden;
+				transition: 0.8s ease;
+
+				button#upload {
+					display: none;
+				}
+
+				.uploadIcon {
+					margin: 0.5rem 0.5rem 0 0;
+					width: 3rem;
+					height: 3rem;
+				}
+
+				.uploadText {
+					margin: auto;
+					margin-right: 1rem;
+					font-size: 1.8rem;
+				}
+
+				@include mobileL {
+					display: none;
+				}
+			}
+
+			.uploadBtn:hover {
+				width: 12rem;
+			}
+
+			.searchBtn {
+				margin: 1rem 1rem 0 0;
+				width: 4rem;
+				height: 4rem;
+				font-family: $font;
+				font-weight: 800;
+				font-size: 1.6rem;
+				background-color: color(primary);
+				color: color(coloredBgText);
+				border-radius: 2rem;
+				text-decoration: none;
+				display: flex;
+				flex-direction: row-reverse;
+				overflow: hidden;
+				transition: 0.8s ease;
+
+				.searchSubmit {
+					min-width: 4rem;
+					min-height: 4rem;
+					width: 4rem;
+					height: 4rem;
+					background-color: color(primary);
+					border: none;
+					border-radius: 50%;
+					margin-left: 1rem;
+
+					.searchButton {
+						display: none;
+					}
+
+					.searchIcon {
+						width: 2rem;
+						height: 2rem;
+						padding: 11%;
+						margin: 11%;
+
+						@include mobileM {
+							width: 1.5rem;
+							height: 1.5rem;
+						}
+					}
+
+					@include mobileM {
+						min-width: 3rem;
+						min-height: 3rem;
+						width: 3rem;
+						height: 3rem;
+					}
+				}
+
+				.searchInput {
+					width: 18rem;
+					background-color: color(primary);
+					border: none;
+					border-bottom: color(coloredBgText) 0.1rem solid;
+					height: 3rem;
+					margin: 0.5rem 0 0.5rem auto;
+					font-size: 2rem;
+					color: color(coloredBgText);
+					font-family: $font;
+
+					@include mobileL {
+						width: 10rem;
+					}
+
+					::placeholder {
+						color: color(coloredBgText);
+					}
+
+					@include mobileM {
+						width: 9rem;
+						height: 2rem;
+						font-size: 1.5rem;
+					}
+				}
+
+				.searchInput::-webkit-search-decoration,
+				.searchInput::-webkit-search-cancel-button,
+				.searchInput::-webkit-search-results-button,
+				.searchInput::-webkit-search-results-decoration {
+					display: none;
+				}
+
+				@include mobileL {
+					width: 17rem;
+				}
+
+				@include mobileM {
+					width: 15rem;
+					height: 3rem;
+					margin: 1rem 1rem 0 0;
+				}
+			}
+
+			.searchBtn:hover {
+				width: 25rem;
+
+				@include mobileL {
+					width: 17rem;
+				}
+
+				@include mobileM {
+					width: 15rem;
+				}
+			}
+
+			@include mobileL {
+				width: 55%;
+				height: 5rem;
+			}
+
+			@include mobileM {
+				width: 75%;
+			}
+		}
+
+		@include mobileM {
+			height: 5rem;
+		}
+	}
+}
